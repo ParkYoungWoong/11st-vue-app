@@ -1,0 +1,35 @@
+{
+  "name": "11st",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:parcel": "parcel index.html",
+    "dev": "netlify dev",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@vue/component-compiler-utils": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "netlify-cli": "^2.69.11",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.32.0",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "components": "^0.1.0",
+    "dayjs": "^1.9.8",
+    "swiper": "^6.4.5",
+    "vue": "^2.6.12",
+    "vue-hot-reload-api": "^2.3.4",
+    "vuex": "^3.6.0"
+  }
+}
