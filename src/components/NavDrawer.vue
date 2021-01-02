@@ -8,7 +8,7 @@
     </div>
     <div class="container">
       <div
-          v-for="(value, key) in navDrawers"
+          v-for="(value, key, index) in navDrawers"
           :key="key"
           class="group">
         <h3 class="group__title">
@@ -16,12 +16,16 @@
         </h3>
         <ul class="group__list">
           <li
-              v-for="item in value.list"
-              :key="item">
-            {{ item }}
-            <div class="depth">
-              {{ item }}
-            </div>
+              v-for="item1 in value.list"
+              :key="item1">
+            {{ item1.title }}
+            <ul class="depth">
+              <li
+                v-for="item2 in item1.list"
+                :key="item2">
+                {{ item2.title }}
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -63,6 +67,7 @@ export default {
     top: 0;
     bottom: 0;
     left: 0;
+    z-index: 99;
     width: 300px;
     background-color: #f6f6f6;
     transition: transform .4s;
@@ -110,7 +115,7 @@ export default {
         font-weight: 700;
       }
       &__list {
-        li {
+        > li {
           height: 50px;
           padding: 0 25px;
           line-height: 50px;
@@ -119,7 +124,7 @@ export default {
             background-color: #ff5534;
             color: #fff;
           }
-          .depth {
+          > .depth {
             display: none;
             width: 200px;
             position: fixed;
@@ -129,7 +134,7 @@ export default {
             border-left: 1px solid #eee;
             background: red;
           }
-          &:hover .depth {
+          &:hover > .depth {
             display: block;
           }
         }

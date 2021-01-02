@@ -11,15 +11,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "browserslist": [
-    "last 1 Chrome version"
-  ],
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@vue/component-compiler-utils": "^3.2.0",
     "dotenv": "^8.2.0",
     "netlify-cli": "^2.69.11",
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.5.0",
     "sass": "^1.32.0",
     "vue-template-compiler": "^2.6.12"
   },
@@ -31,5 +29,11 @@
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4",
     "vuex": "^3.6.0"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "staticFiles": {
+    "staticPath": "public"
   }
 }
