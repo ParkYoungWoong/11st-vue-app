@@ -1,5 +1,7 @@
 <template>
-  <nav :class="{ show: isShowNav }">
+  <nav
+    v-if="done"
+    :class="{ show: isShowNav }">
     <!--User Info-->
     <div class="user">
       <a href="javascript:void(0)">로그인</a>
@@ -9,9 +11,7 @@
         @click="offNav"></div>
     </div>
     <!--Navigation Container-->
-    <div
-      v-if="navDrawers.categories"
-      class="container">
+    <div class="container">
 
       <div class="group categories">
         <h3 class="group__title">
@@ -19,8 +19,11 @@
         </h3>
         <ul class="group__list">
           <li
-              v-for="item1 in categories.list"
-              :key="item1.name">
+            v-for="(item1, index) in categories.list"
+            :key="item1.name">
+            <div
+              :style="`background-position: ${categoryIconPosition[index][0]}px ${categoryIconPosition[index][1]}px;`"
+              class="category-icon"></div>
             {{ item1.name }}
             <ul class="depth">
               <li
@@ -41,8 +44,8 @@
         </div>
         <ul class="group__list">
           <li
-              v-for="item in majorServices.list"
-              :key="item.name">
+            v-for="item in majorServices.list"
+            :key="item.name">
             <a :href="item.href">
               {{ item.name }}
             </a>
@@ -56,8 +59,8 @@
         </div>
         <ul class="group__list">
           <li
-              v-for="item in outlets.list"
-              :key="item.name">
+            v-for="item in outlets.list"
+            :key="item.name">
             <a :href="item.href">
               <img
                 :src="item.src"
@@ -121,6 +124,25 @@
 import { mapActions } from 'vuex'
 
 export default {
+  data () {
+    return {
+      done: false,
+      categoryIconPosition: [
+        [0, -58],
+        [-58, -116],
+        [0, -29],
+        [-87, -29],
+        [-116, -58],
+        [-29, 0],
+        [0, 0],
+        [-58, -87],
+        [-58, -58],
+        [-58, 0],
+        [0, -116],
+        [-116, 0],
+      ]
+    }
+  },
   computed: {
     navDrawers () {
       return this.$store.state.fetchData.navDrawers
@@ -148,9 +170,7 @@ export default {
     }
   },
   created () {
-    this.fetchData({
-      requestName: 'navDrawers'
-    })
+    this.init()
   },
   methods: {
     ...mapActions('navDrawer', [
@@ -159,6 +179,12 @@ export default {
     ...mapActions('fetchData', [
       'fetchData'
     ]),
+    async init () {
+      await this.fetchData({
+        requestName: 'navDrawers'
+      })
+      this.done = true
+    },
     getData (name) {
       return this.navDrawers[name]
     }
@@ -208,9 +234,10 @@ export default {
       }
     }
     .container {
-      overflow: auto;
-      padding: 10px 0;
       height: calc(100% - 164px); // user height 70px + exhibitions height 94px
+      padding: 10px 0;
+      box-sizing: border-box;
+      overflow: auto;
       a {
         color: #333;
       }
@@ -246,6 +273,12 @@ export default {
           > li {
             height: 50px;
             padding: 0 25px;
+            .category-icon {
+              width: 24px;
+              height: 24px;
+              background-image: url("https://trusting-williams-8cacfb.netlify.app/images/categories_2x.jpg");
+              background-size: 140px;
+            }
             &:hover {
               background-color: #ff5534;
               color: #fff;
