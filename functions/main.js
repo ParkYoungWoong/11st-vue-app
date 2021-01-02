@@ -9,6 +9,8 @@ exports.handler = async function (event) {
     rankings
   };
 
+  console.log(process.env.API_KEY, apiKey)
+
   if (process.env.API_KEY !== apiKey) {
     return {
       statusCode: 401,
