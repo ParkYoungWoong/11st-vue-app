@@ -3,817 +3,817 @@
     "title": "카테고리",
     "list": [
       {
-        "title": "브랜드패션",
+        "name": "브랜드패션",
         "list": [
           {
-            "title": "브랜드 여성의류",
+            "name": "브랜드 여성의류",
             "href": "javascript:void(0)"
           },
           {
-            "title": "브랜드 여성신발",
+            "name": "브랜드 여성신발",
             "href": "javascript:void(0)"
           },
           {
-            "title": "브랜드 여성가방",
+            "name": "브랜드 여성가방",
             "href": "javascript:void(0)"
           },
           {
-            "title": "디자이너 여성의류",
+            "name": "디자이너 여성의류",
             "href": "javascript:void(0)"
           },
           {
-            "title": "브랜드 남성의류",
+            "name": "브랜드 남성의류",
             "href": "javascript:void(0)"
           },
           {
-            "title": "브랜드 남성신발",
+            "name": "브랜드 남성신발",
             "href": "javascript:void(0)"
           },
           {
-            "title": "브랜드 남성가방",
+            "name": "브랜드 남성가방",
             "href": "javascript:void(0)"
           },
           {
-            "title": "디자이너 남성의류",
+            "name": "디자이너 남성의류",
             "href": "javascript:void(0)"
           },
           {
-            "title": "캐주얼/유니섹스",
+            "name": "캐주얼/유니섹스",
             "href": "javascript:void(0)"
           },
           {
-            "title": "브랜드 언더웨어",
+            "name": "브랜드 언더웨어",
             "href": "javascript:void(0)"
           },
           {
-            "title": "브랜드 여행가방",
+            "name": "브랜드 여행가방",
             "href": "javascript:void(0)"
           },
           {
-            "title": "브랜드 지갑/벨트",
+            "name": "브랜드 지갑/벨트",
             "href": "javascript:void(0)"
           },
           {
-            "title": "브랜드 쥬얼리",
+            "name": "브랜드 쥬얼리",
             "href": "javascript:void(0)"
           },
           {
-            "title": "브랜드 시계",
+            "name": "브랜드 시계",
             "href": "javascript:void(0)"
           },
           {
-            "title": "브랜드 잡화/소품",
+            "name": "브랜드 잡화/소품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "디자이너 잡화",
+            "name": "디자이너 잡화",
             "href": "javascript:void(0)"
           },
           {
-            "title": "수입명품",
+            "name": "수입명품",
             "href": "javascript:void(0)"
           }
         ]
       },
       {
-        "title": "트렌드패션",
+        "name": "트렌드패션",
         "list": [
           {
-            "title": "여성의류",
+            "name": "여성의류",
             "href": "javascript:void(0)"
           },
           {
-            "title": "여성신발",
+            "name": "여성신발",
             "href": "javascript:void(0)"
           },
           {
-            "title": "여성가방",
+            "name": "여성가방",
             "href": "javascript:void(0)"
           },
           {
-            "title": "임부복/소품",
+            "name": "임부복/소품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "남성의류",
+            "name": "남성의류",
             "href": "javascript:void(0)"
           },
           {
-            "title": "남성신발",
+            "name": "남성신발",
             "href": "javascript:void(0)"
           },
           {
-            "title": "남성가방",
+            "name": "남성가방",
             "href": "javascript:void(0)"
           },
           {
-            "title": "언더웨어/잠옷",
+            "name": "언더웨어/잠옷",
             "href": "javascript:void(0)"
           },
           {
-            "title": "여행가방/소품",
+            "name": "여행가방/소품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "지갑/벨트",
+            "name": "지갑/벨트",
             "href": "javascript:void(0)"
           },
           {
-            "title": "쥬얼리",
+            "name": "쥬얼리",
             "href": "javascript:void(0)"
           },
           {
-            "title": "시계",
+            "name": "시계",
             "href": "javascript:void(0)"
           },
           {
-            "title": "패션잡화",
+            "name": "패션잡화",
             "href": "javascript:void(0)"
           }
         ]
       },
       {
-        "title": "뷰티",
+        "name": "뷰티",
         "list": [
           {
-            "title": "스킨케어",
+            "name": "스킨케어",
             "href": "javascript:void(0)"
           },
           {
-            "title": "메이크업",
+            "name": "메이크업",
             "href": "javascript:void(0)"
           },
           {
-            "title": "선케어",
+            "name": "선케어",
             "href": "javascript:void(0)"
           },
           {
-            "title": "클렌징/필링",
+            "name": "클렌징/필링",
             "href": "javascript:void(0)"
           },
           {
-            "title": "남성화장품",
+            "name": "남성화장품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "향수",
+            "name": "향수",
             "href": "javascript:void(0)"
           },
           {
-            "title": "헤어케어",
+            "name": "헤어케어",
             "href": "javascript:void(0)"
           },
           {
-            "title": "바디케어",
+            "name": "바디케어",
             "href": "javascript:void(0)"
           },
           {
-            "title": "네일케어",
+            "name": "네일케어",
             "href": "javascript:void(0)"
           },
           {
-            "title": "뷰티소품",
+            "name": "뷰티소품",
             "href": "javascript:void(0)"
           }
         ]
       },
       {
-        "title": "식품",
+        "name": "식품",
         "list": [
           {
-            "title": "과일",
+            "name": "과일",
             "href": "javascript:void(0)"
           },
           {
-            "title": "채소",
+            "name": "채소",
             "href": "javascript:void(0)"
           },
           {
-            "title": "곡물",
+            "name": "곡물",
             "href": "javascript:void(0)"
           },
           {
-            "title": "건과/견과",
+            "name": "건과/견과",
             "href": "javascript:void(0)"
           },
           {
-            "title": "축산",
+            "name": "축산",
             "href": "javascript:void(0)"
           },
           {
-            "title": "수산",
+            "name": "수산",
             "href": "javascript:void(0)"
           },
           {
-            "title": "김치",
+            "name": "김치",
             "href": "javascript:void(0)"
           },
           {
-            "title": "반찬/젓갈",
+            "name": "반찬/젓갈",
             "href": "javascript:void(0)"
           },
           {
-            "title": "밀키트/쿠킹박스",
+            "name": "밀키트/쿠킹박스",
             "href": "javascript:void(0)"
           },
           {
-            "title": "전통식품",
+            "name": "전통식품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "가공식품",
+            "name": "가공식품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "커피/생수/음료",
+            "name": "커피/생수/음료",
             "href": "javascript:void(0)"
           },
           {
-            "title": "과자/간식",
+            "name": "과자/간식",
             "href": "javascript:void(0)"
           },
           {
-            "title": "간편식/냉장/냉동",
+            "name": "간편식/냉장/냉동",
             "href": "javascript:void(0)"
           },
           {
-            "title": "우유/유제품",
+            "name": "우유/유제품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "건강식품",
+            "name": "건강식품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "다이어트식품",
+            "name": "다이어트식품",
             "href": "javascript:void(0)"
           }
         ]
       },
       {
-        "title": "스포츠/레저/자동차",
+        "name": "스포츠/레저/자동차",
         "list": [
           {
-            "title": "스포츠 의류",
+            "name": "스포츠 의류",
             "href": "javascript:void(0)"
           },
           {
-            "title": "스포츠 신발",
+            "name": "스포츠 신발",
             "href": "javascript:void(0)"
           },
           {
-            "title": "스포츠 잡화",
+            "name": "스포츠 잡화",
             "href": "javascript:void(0)"
           },
           {
-            "title": "골프",
+            "name": "골프",
             "href": "javascript:void(0)"
           },
           {
-            "title": "수영/수상레저",
+            "name": "수영/수상레저",
             "href": "javascript:void(0)"
           },
           {
-            "title": "스키/보드",
+            "name": "스키/보드",
             "href": "javascript:void(0)"
           },
           {
-            "title": "구기/라켓/스포츠",
+            "name": "구기/라켓/스포츠",
             "href": "javascript:void(0)"
           },
           {
-            "title": "헬스",
+            "name": "헬스",
             "href": "javascript:void(0)"
           },
           {
-            "title": "요가/필라테스",
+            "name": "요가/필라테스",
             "href": "javascript:void(0)"
           },
           {
-            "title": "전동/인라인/킥보드",
+            "name": "전동/인라인/킥보드",
             "href": "javascript:void(0)"
           },
           {
-            "title": "자전거",
+            "name": "자전거",
             "href": "javascript:void(0)"
           },
           {
-            "title": "캠핑",
+            "name": "캠핑",
             "href": "javascript:void(0)"
           },
           {
-            "title": "낚시",
+            "name": "낚시",
             "href": "javascript:void(0)"
           },
           {
-            "title": "오토바이/스쿠터",
+            "name": "오토바이/스쿠터",
             "href": "javascript:void(0)"
           },
           {
-            "title": "등산/아웃도어",
+            "name": "등산/아웃도어",
             "href": "javascript:void(0)"
           },
           {
-            "title": "자동차용품",
+            "name": "자동차용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "자동차기기",
+            "name": "자동차기기",
             "href": "javascript:void(0)"
           },
           {
-            "title": "공구",
+            "name": "공구",
             "href": "javascript:void(0)"
           },
           {
-            "title": "전기/산업자재",
+            "name": "전기/산업자재",
             "href": "javascript:void(0)"
           },
           {
-            "title": "안전/보안용품",
+            "name": "안전/보안용품",
             "href": "javascript:void(0)"
           }
         ]
       },
       {
-        "title": "출산/육아",
+        "name": "출산/육아",
         "list": [
           {
-            "title": "기저귀",
+            "name": "기저귀",
             "href": "javascript:void(0)"
           },
           {
-            "title": "분유",
+            "name": "분유",
             "href": "javascript:void(0)"
           },
           {
-            "title": "물티슈",
+            "name": "물티슈",
             "href": "javascript:void(0)"
           },
           {
-            "title": "장난감",
+            "name": "장난감",
             "href": "javascript:void(0)"
           },
           {
-            "title": "출산/돌기념품",
+            "name": "출산/돌기념품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "순금/돌반지",
+            "name": "순금/돌반지",
             "href": "javascript:void(0)"
           },
           {
-            "title": "이유용품",
+            "name": "이유용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "수유용품",
+            "name": "수유용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "유아동식/영양제",
+            "name": "유아동식/영양제",
             "href": "javascript:void(0)"
           },
           {
-            "title": "유아목욕/스킨케어",
+            "name": "유아목욕/스킨케어",
             "href": "javascript:void(0)"
           },
           {
-            "title": "유아세제/위생용품",
+            "name": "유아세제/위생용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "유아안전/실내용품",
+            "name": "유아안전/실내용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "외출용품",
+            "name": "외출용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "유아가구/침구",
+            "name": "유아가구/침구",
             "href": "javascript:void(0)"
           },
           {
-            "title": "임부복/소품",
+            "name": "임부복/소품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "신생아의류",
+            "name": "신생아의류",
             "href": "javascript:void(0)"
           },
           {
-            "title": "유아의류",
+            "name": "유아의류",
             "href": "javascript:void(0)"
           },
           {
-            "title": "아동/주니어의류",
+            "name": "아동/주니어의류",
             "href": "javascript:void(0)"
           },
           {
-            "title": "유아동신발",
+            "name": "유아동신발",
             "href": "javascript:void(0)"
           },
           {
-            "title": "유아동잡화",
+            "name": "유아동잡화",
             "href": "javascript:void(0)"
           }
         ]
       },
       {
-        "title": "가구/인테리어",
+        "name": "가구/인테리어",
         "list": [
           {
-            "title": "거실가구",
+            "name": "거실가구",
             "href": "javascript:void(0)"
           },
           {
-            "title": "침실가구",
+            "name": "침실가구",
             "href": "javascript:void(0)"
           },
           {
-            "title": "주방가구",
+            "name": "주방가구",
             "href": "javascript:void(0)"
           },
           {
-            "title": "수납가구",
+            "name": "수납가구",
             "href": "javascript:void(0)"
           },
           {
-            "title": "서재/사무용가구",
+            "name": "서재/사무용가구",
             "href": "javascript:void(0)"
           },
           {
-            "title": "유아동가구",
+            "name": "유아동가구",
             "href": "javascript:void(0)"
           },
           {
-            "title": "아웃도어가구",
+            "name": "아웃도어가구",
             "href": "javascript:void(0)"
           },
           {
-            "title": "리모델링가구",
+            "name": "리모델링가구",
             "href": "javascript:void(0)"
           },
           {
-            "title": "침구",
+            "name": "침구",
             "href": "javascript:void(0)"
           },
           {
-            "title": "홈패브릭/수예",
+            "name": "홈패브릭/수예",
             "href": "javascript:void(0)"
           },
           {
-            "title": "커튼/블라인드",
+            "name": "커튼/블라인드",
             "href": "javascript:void(0)"
           },
           {
-            "title": "카페트/러그",
+            "name": "카페트/러그",
             "href": "javascript:void(0)"
           },
           {
-            "title": "조명",
+            "name": "조명",
             "href": "javascript:void(0)"
           },
           {
-            "title": "DIY자재/용품",
+            "name": "DIY자재/용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "인테리어소품",
+            "name": "인테리어소품",
             "href": "javascript:void(0)"
           }
         ]
       },
       {
-        "title": "생활/건강",
+        "name": "생활/건강",
         "list": [
           {
-            "title": "세탁용품",
+            "name": "세탁용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "세제/방향/살충",
+            "name": "세제/방향/살충",
             "href": "javascript:void(0)"
           },
           {
-            "title": "주방용품",
+            "name": "주방용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "주방잡화",
+            "name": "주방잡화",
             "href": "javascript:void(0)"
           },
           {
-            "title": "욕실용품",
+            "name": "욕실용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "청소용품",
+            "name": "청소용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "수납정리용품",
+            "name": "수납정리용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "생활잡화",
+            "name": "생활잡화",
             "href": "javascript:void(0)"
           },
           {
-            "title": "구강/세안/면도",
+            "name": "구강/세안/면도",
             "href": "javascript:void(0)"
           },
           {
-            "title": "화장지",
+            "name": "화장지",
             "href": "javascript:void(0)"
           },
           {
-            "title": "생리대/성인기저귀",
+            "name": "생리대/성인기저귀",
             "href": "javascript:void(0)"
           },
           {
-            "title": "안마용품",
+            "name": "안마용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "온열/찜질용품",
+            "name": "온열/찜질용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "저주파/적외선용품",
+            "name": "저주파/적외선용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "건강관리용품",
+            "name": "건강관리용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "건강측정용품",
+            "name": "건강측정용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "당뇨관리용품",
+            "name": "당뇨관리용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "몸매관리용품",
+            "name": "몸매관리용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "눈건강용품",
+            "name": "눈건강용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "손발건강용품",
+            "name": "손발건강용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "실버용품",
+            "name": "실버용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "재활운동용품",
+            "name": "재활운동용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "가정의료용품",
+            "name": "가정의료용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "병원/의료용품",
+            "name": "병원/의료용품",
             "href": "javascript:void(0)"
           }
         ]
       },
       {
-        "title": "가전/디지털",
+        "name": "가전/디지털",
         "list": [
           {
-            "title": "TV",
+            "name": "TV",
             "href": "javascript:void(0)"
           },
           {
-            "title": "냉장고",
+            "name": "냉장고",
             "href": "javascript:void(0)"
           },
           {
-            "title": "세탁기/건조기",
+            "name": "세탁기/건조기",
             "href": "javascript:void(0)"
           },
           {
-            "title": "주방가전",
+            "name": "주방가전",
             "href": "javascript:void(0)"
           },
           {
-            "title": "생활가전",
+            "name": "생활가전",
             "href": "javascript:void(0)"
           },
           {
-            "title": "이미용가전",
+            "name": "이미용가전",
             "href": "javascript:void(0)"
           },
           {
-            "title": "계절가전",
+            "name": "계절가전",
             "href": "javascript:void(0)"
           },
           {
-            "title": "영상가전",
+            "name": "영상가전",
             "href": "javascript:void(0)"
           },
           {
-            "title": "음향가전",
+            "name": "음향가전",
             "href": "javascript:void(0)"
           },
           {
-            "title": "렌탈/가입상품",
+            "name": "렌탈/가입상품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "노트북",
+            "name": "노트북",
             "href": "javascript:void(0)"
           },
           {
-            "title": "데스크탑",
+            "name": "데스크탑",
             "href": "javascript:void(0)"
           },
           {
-            "title": "모니터",
+            "name": "모니터",
             "href": "javascript:void(0)"
           },
           {
-            "title": "프린터/복합기",
+            "name": "프린터/복합기",
             "href": "javascript:void(0)"
           },
           {
-            "title": "저장장치",
+            "name": "저장장치",
             "href": "javascript:void(0)"
           },
           {
-            "title": "PC부품",
+            "name": "PC부품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "컴퓨터 주변기기",
+            "name": "컴퓨터 주변기기",
             "href": "javascript:void(0)"
           },
           {
-            "title": "휴대폰",
+            "name": "휴대폰",
             "href": "javascript:void(0)"
           },
           {
-            "title": "스마트기기",
+            "name": "스마트기기",
             "href": "javascript:void(0)"
           },
           {
-            "title": "카메라/주변기기",
+            "name": "카메라/주변기기",
             "href": "javascript:void(0)"
           },
           {
-            "title": "태블릿",
+            "name": "태블릿",
             "href": "javascript:void(0)"
           },
           {
-            "title": "게임",
+            "name": "게임",
             "href": "javascript:void(0)"
           }
         ]
       },
       {
-        "title": "도서/취미/펫",
+        "name": "도서/취미/펫",
         "list": [
           {
-            "title": "도서/문구",
+            "name": "도서/문구",
             "href": "javascript:void(0)"
           },
           {
-            "title": "도서/음반",
+            "name": "도서/음반",
             "href": "javascript:void(0)"
           },
           {
-            "title": "문구/사무용품",
+            "name": "문구/사무용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "화방용품",
+            "name": "화방용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "악기/취미",
+            "name": "악기/취미",
             "href": "javascript:void(0)"
           },
           {
-            "title": "악기",
+            "name": "악기",
             "href": "javascript:void(0)"
           },
           {
-            "title": "취미",
+            "name": "취미",
             "href": "javascript:void(0)"
           },
           {
-            "title": "꽃/원예",
+            "name": "꽃/원예",
             "href": "javascript:void(0)"
           },
           {
-            "title": "꽃배달",
+            "name": "꽃배달",
             "href": "javascript:void(0)"
           },
           {
-            "title": "펫",
+            "name": "펫",
             "href": "javascript:void(0)"
           },
           {
-            "title": "강아지용품",
+            "name": "강아지용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "고양이용품",
+            "name": "고양이용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "조류용품",
+            "name": "조류용품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "관상어/수족관",
+            "name": "관상어/수족관",
             "href": "javascript:void(0)"
           },
           {
-            "title": "소동물용품",
+            "name": "소동물용품",
             "href": "javascript:void(0)"
           }
         ]
       },
       {
-        "title": "여행/티켓/e쿠폰",
+        "name": "여행/티켓/e쿠폰",
         "list": [
           {
-            "title": "여행/숙박/항공",
+            "name": "여행/숙박/항공",
             "href": "javascript:void(0)"
           },
           {
-            "title": "티켓/공연/굿즈",
+            "name": "티켓/공연/굿즈",
             "href": "javascript:void(0)"
           },
           {
-            "title": "e쿠폰/상품권",
+            "name": "e쿠폰/상품권",
             "href": "javascript:void(0)"
           },
           {
-            "title": "홈&카서비스",
+            "name": "홈&카서비스",
             "href": "javascript:void(0)"
           }
         ]
       },
       {
-        "title": "해외직구",
+        "name": "해외직구",
         "list": [
           {
-            "title": "해외직구",
+            "name": "해외직구",
             "href": "javascript:void(0)"
           },
           {
-            "title": "의류/언더웨어",
+            "name": "의류/언더웨어",
             "href": "javascript:void(0)"
           },
           {
-            "title": "패션잡화",
+            "name": "패션잡화",
             "href": "javascript:void(0)"
           },
           {
-            "title": "해외명품",
+            "name": "해외명품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "뷰티",
+            "name": "뷰티",
             "href": "javascript:void(0)"
           },
           {
-            "title": "건강식품",
+            "name": "건강식품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "식품",
+            "name": "식품",
             "href": "javascript:void(0)"
           },
           {
-            "title": "스포츠/레저",
+            "name": "스포츠/레저",
             "href": "javascript:void(0)"
           },
           {
-            "title": "리빙/생활",
+            "name": "리빙/생활",
             "href": "javascript:void(0)"
           },
           {
-            "title": "스마트기기",
+            "name": "스마트기기",
             "href": "javascript:void(0)"
           },
           {
-            "title": "디지털/가전",
+            "name": "디지털/가전",
             "href": "javascript:void(0)"
           },
           {
-            "title": "노트북/PC",
+            "name": "노트북/PC",
             "href": "javascript:void(0)"
           }
         ]
@@ -824,91 +824,91 @@
     "title": "주요서비스",
     "list": [
       {
-        "title": "베스트",
+        "name": "베스트",
         "href": "javascript:void(0)"
       },
       {
-        "title": "쇼킹딜",
+        "name": "쇼킹딜",
         "href": "javascript:void(0)"
       },
       {
-        "title": "오늘장보기",
+        "name": "오늘장보기",
         "href": "javascript:void(0)"
       },
       {
-        "title": "백화점",
+        "name": "백화점",
         "href": "javascript:void(0)"
       },
       {
-        "title": "해외직구",
+        "name": "해외직구",
         "href": "javascript:void(0)"
       },
       {
-        "title": "T공식대리점",
+        "name": "T공식대리점",
         "href": "javascript:void(0)"
       },
       {
-        "title": "기획전",
+        "name": "기획전",
         "href": "javascript:void(0)"
       },
       {
-        "title": "쿠폰/혜택",
+        "name": "쿠폰/혜택",
         "href": "javascript:void(0)"
       },
       {
-        "title": "SK pay",
+        "name": "SK pay",
         "href": "javascript:void(0)"
       },
       {
-        "title": "무료포인트",
+        "name": "무료포인트",
         "href": "javascript:void(0)"
       },
       {
-        "title": "도서11번가",
+        "name": "도서11번가",
         "href": "javascript:void(0)"
       },
       {
-        "title": "여행",
+        "name": "여행",
         "href": "javascript:void(0)"
       },
       {
-        "title": "티켓",
+        "name": "티켓",
         "href": "javascript:void(0)"
       },
       {
-        "title": "홈&카서비스",
+        "name": "홈&카서비스",
         "href": "javascript:void(0)"
       },
       {
-        "title": "렌탈샵",
+        "name": "렌탈샵",
         "href": "javascript:void(0)"
       },
       {
-        "title": "사업자전용몰",
+        "name": "사업자전용몰",
         "href": "javascript:void(0)"
       },
       {
-        "title": "항공권가격비교",
+        "name": "항공권가격비교",
         "href": "javascript:void(0)"
       },
       {
-        "title": "싸이닉",
+        "name": "싸이닉",
         "href": "javascript:void(0)"
       },
       {
-        "title": "십일초이스",
+        "name": "십일초이스",
         "href": "javascript:void(0)"
       },
       {
-        "title": "전세계배송",
+        "name": "전세계배송",
         "href": "javascript:void(0)"
       },
       {
-        "title": "11픽업",
+        "name": "11픽업",
         "href": "javascript:void(0)"
       },
       {
-        "title": "행복크레딧",
+        "name": "행복크레딧",
         "href": "javascript:void(0)"
       }
     ]
@@ -918,31 +918,38 @@
     "list": [
       {
         "name": "신세계백화점",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/outlet1"
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/outlet1.jpg",
+        "href": "javascript:void(0)"
       },
       {
         "name": "롯데백화점",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/outlet2"
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/outlet2.jpg",
+        "href": "javascript:void(0)"
       },
       {
         "name": "현대백화점",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/outlet3"
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/outlet3.jpg",
+        "href": "javascript:void(0)"
       },
       {
         "name": "갤러리아백화점",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/outlet4"
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/outlet4.jpg",
+        "href": "javascript:void(0)"
       },
       {
         "name": "AK백화점",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/outlet5"
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/outlet5.jpg",
+        "href": "javascript:void(0)"
       },
       {
         "name": "대구백화점",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/outlet6"
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/outlet6.jpg",
+        "href": "javascript:void(0)"
       },
       {
         "name": "아이파크백화점",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/outlet7"
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/outlet7.jpg",
+        "href": "javascript:void(0)"
       }
     ]
   },
@@ -950,36 +957,44 @@
     "title": "파트너스",
     "list": [
       {
-        "title": "GS Fresh",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner1"
+        "name": "GS Fresh",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner1.png",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "홈플러스",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner2"
+        "name": "홈플러스",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner2.png",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "iHerb",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner3"
+        "name": "iHerb",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner3.png",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "공영쇼핑",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner4"
+        "name": "공영쇼핑",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner4.png",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "롯데홈쇼핑",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner5"
+        "name": "롯데홈쇼핑",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner5.png",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "롯데닷컴",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner6"
+        "name": "롯데닷컴",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner6.png",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "GS SHOP",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner7"
+        "name": "GS SHOP",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner7.png",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "CJ Mall",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner8"
+        "name": "CJ Mall",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner8.png",
+        "href": "javascript:void(0)"
       }
     ]
   },
@@ -987,49 +1002,65 @@
     "title": "브랜드몰",
     "list": [
       {
-        "title": "한샘",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall1"
+        "name": "한샘",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall1.jpg",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "정관장",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall2"
+        "name": "정관장",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall2.jpg",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "아모레퍼시픽",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall3"
+        "name": "아모레퍼시픽",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall3.jpg",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "뉴발란스",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall4"
+        "name": "뉴발란스",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall4.jpg",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "데상트",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall5"
+        "name": "데상트",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall5.jpg",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "아디다스",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall6"
+        "name": "아디다스",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall6.jpg",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "나이키",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall7"
+        "name": "나이키",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall7.jpg",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "휠라",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall8"
+        "name": "휠라",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall8.jpg",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "애플",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall9"
+        "name": "애플",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall9.jpg",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "LG전자",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall10"
+        "name": "LG전자",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall10.jpg",
+        "href": "javascript:void(0)"
       },
       {
-        "title": "삼성",
-        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall11"
+        "name": "삼성",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall11.jpg",
+        "href": "javascript:void(0)"
       }
     ]
+  },
+  "exhibitions": {
+    "name": "SK pay 머니, 결제하고 혜택받아요!",
+    "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/exhibitions.jpg",
+    "href": "javascript:void(0)"
   }
 }
