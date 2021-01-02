@@ -65,9 +65,9 @@
                 <span class="name">{{ rank.name }}</span>
                 <span class="relative-name">{{ rank.relativeName }}</span>
               </a>
-              <div class="icon">
-                {{ rank.status }}
-              </div>
+              <div
+                  :class="rank.status"
+                  class="icon"></div>
             </li>
           </ul>
         </div>
@@ -147,6 +147,9 @@ export default {
       display: flex;
       align-items: center;
       .open-nav-drawer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 60px;
         height: 60px;
         border-radius: 50%;
@@ -154,11 +157,32 @@ export default {
         box-shadow:
           0 2px 6px rgba(0,0,0,.06),
           0 0 1px rgba(0,0,0,.4);
+        &::after {
+          content: "";
+          display: block;
+          width: 36px;
+          height: 36px;
+          background-image: url("https://trusting-williams-8cacfb.netlify.app/images/globals_2x.png");
+          background-position: -302px -203px;
+          background-size: 363px;
+        }
       }
       .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 190px;
         height: 120px;
         cursor: pointer;
+        &::after {
+          content: "";
+          display: block;
+          width: 94px;
+          height: 40px;
+          background-image: url("https://trusting-williams-8cacfb.netlify.app/images/globals_2x.png");
+          background-position: -162px 0;
+          background-size: 363px;
+        }
       }
       .search {
         position: relative;
@@ -177,19 +201,23 @@ export default {
         .search__icon {
           width: 50px;
           height: 50px;
-          background-color: red;
           position: absolute;
           top: 0;
           right: 0;
           cursor: pointer;
+          background-image: url("https://trusting-williams-8cacfb.netlify.app/images/globals_2x.png");
+          background-position: -162px -45px;
+          background-size: 363px 275px;
         }
       }
       .ranking {
+        width: 210px;
         position: relative;
         margin: 0 30px;
         .swiper-container {
-          width: 210px;
+          width: 182px;
           height: 28px;
+          margin: 0;
           .swiper-slide {
             transition: .4s;
             opacity: 0;
@@ -206,6 +234,9 @@ export default {
                 color: #f43142;
                 font-style: italic;
               }
+              &:hover .name {
+                color: #f43142;
+              }
             }
             &.swiper-slide-active {
               opacity: 1;
@@ -213,20 +244,37 @@ export default {
           }
         }
         .open-more {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 28px;
           height: 28px;
-          background-color: red;
+          border-radius: 50%;
           position: absolute;
           top: 0;
           right: 0;
           z-index: 1; // Required! Cause Swiper.
           cursor: pointer;
+          &:hover {
+            background-color: #ececec;
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 7px;
+            height: 7px;
+            margin-top: -3px;
+            border: solid #999;
+            border-width: 0 1px 1px 0;
+            box-sizing: border-box;
+            transform: rotate(45deg);
+          }
         }
         .ranking-wrap {
           position: absolute;
           top: 44px;
           width: 410px;
-          padding: 25px;
+          padding: 18px 25px 25px;
           border: 1px solid #eee;
           border-radius: 4px;
           box-sizing: border-box;
@@ -245,10 +293,14 @@ export default {
               flex: 1;
             }
             .close-wrap {
-              width: 24px;
-              height: 24px;
-              background-color: red;
+              width: 36px;
+              height: 36px;
+              background-image: url("https://trusting-williams-8cacfb.netlify.app/images/globals_2x.png");
+              background-position: -261px -203px;
+              background-size: 363px;
               cursor: pointer;
+              margin: -6px -10px;
+              transform: scale(.6666); // from 36px to 24px
             }
           }
           .tabs {
@@ -307,7 +359,29 @@ export default {
                 right: 0;
                 width: 22px;
                 height: 22px;
-                background-color: red;
+                background-image: url("https://trusting-williams-8cacfb.netlify.app/images/globals_2x.png");
+                background-size: 363px;
+                &.stay {
+                  background-image: none;
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 6px;
+                    height: 2px;
+                    background: #999;
+                  }
+                }
+                &.up {
+                  background-position: -110px -251px;
+                }
+                &.down {
+                  background-position: -58px -251px;
+                }
               }
             }
           }

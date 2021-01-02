@@ -820,7 +820,7 @@
       }
     ]
   },
-  "major_services": {
+  "majorServices": {
     "title": "주요서비스",
     "list": [
       {
@@ -998,7 +998,7 @@
       }
     ]
   },
-  "brandmall": {
+  "brandMall": {
     "title": "브랜드몰",
     "list": [
       {

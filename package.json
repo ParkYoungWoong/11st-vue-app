@@ -25,6 +25,7 @@
     "axios": "^0.21.1",
     "components": "^0.1.0",
     "dayjs": "^1.9.8",
+    "lodash": "^4.17.20",
     "swiper": "^6.4.5",
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4",
