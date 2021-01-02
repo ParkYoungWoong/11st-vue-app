@@ -916,21 +916,120 @@
   "outlets": {
     "title": "백화점/아울렛",
     "list": [
-      "신세계백화점",
-      "롯데백화점",
-      "현대백화점",
-      "갤러리아백화점",
-      "AK백화점",
-      "대구백화점",
-      "아이파크백화점"
+      {
+        "name": "신세계백화점",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/outlet1"
+      },
+      {
+        "name": "롯데백화점",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/outlet2"
+      },
+      {
+        "name": "현대백화점",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/outlet3"
+      },
+      {
+        "name": "갤러리아백화점",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/outlet4"
+      },
+      {
+        "name": "AK백화점",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/outlet5"
+      },
+      {
+        "name": "대구백화점",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/outlet6"
+      },
+      {
+        "name": "아이파크백화점",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/outlet7"
+      }
     ]
   },
   "partners": {
     "title": "파트너스",
-    "list": []
+    "list": [
+      {
+        "title": "GS Fresh",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner1"
+      },
+      {
+        "title": "홈플러스",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner2"
+      },
+      {
+        "title": "iHerb",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner3"
+      },
+      {
+        "title": "공영쇼핑",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner4"
+      },
+      {
+        "title": "롯데홈쇼핑",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner5"
+      },
+      {
+        "title": "롯데닷컴",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner6"
+      },
+      {
+        "title": "GS SHOP",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner7"
+      },
+      {
+        "title": "CJ Mall",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/partner8"
+      }
+    ]
   },
-  "brendmall": {
+  "brandmall": {
     "title": "브랜드몰",
-    "list": []
+    "list": [
+      {
+        "title": "한샘",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall1"
+      },
+      {
+        "title": "정관장",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall2"
+      },
+      {
+        "title": "아모레퍼시픽",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall3"
+      },
+      {
+        "title": "뉴발란스",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall4"
+      },
+      {
+        "title": "데상트",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall5"
+      },
+      {
+        "title": "아디다스",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall6"
+      },
+      {
+        "title": "나이키",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall7"
+      },
+      {
+        "title": "휠라",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall8"
+      },
+      {
+        "title": "애플",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall9"
+      },
+      {
+        "title": "LG전자",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall10"
+      },
+      {
+        "title": "삼성",
+        "src": "https://trusting-williams-8cacfb.netlify.app/images/nav/brandmall11"
+      }
+    ]
   }
 }
