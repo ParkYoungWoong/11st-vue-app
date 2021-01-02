@@ -22,7 +22,7 @@
             v-for="(item1, index) in categories.list"
             :key="item1.name">
             <div
-              :style="`background-position: ${categoryIconPosition[index][0]}px ${categoryIconPosition[index][1]}px;`"
+              :style="`background-position: -${index * 24}px -${index * 24}px;`"
               class="category-icon"></div>
             {{ item1.name }}
             <ul class="depth">
@@ -126,21 +126,7 @@ import { mapActions } from 'vuex'
 export default {
   data () {
     return {
-      done: false,
-      categoryIconPosition: [
-        [0, -58],
-        [-58, -116],
-        [0, -29],
-        [-87, -29],
-        [-116, -58],
-        [-29, 0],
-        [0, 0],
-        [-58, -87],
-        [-58, -58],
-        [-58, 0],
-        [0, -116],
-        [-116, 0],
-      ]
+      done: false
     }
   },
   computed: {
@@ -276,8 +262,9 @@ export default {
             .category-icon {
               width: 24px;
               height: 24px;
-              background-image: url("https://trusting-williams-8cacfb.netlify.app/images/categories_2x.jpg");
-              background-size: 140px;
+              margin-right: 4px;
+              background-image: url("https://trusting-williams-8cacfb.netlify.app/images/categories_2x.png");
+              background-size: 140px; // Origin 280px
             }
             &:hover {
               background-color: #ff5534;
