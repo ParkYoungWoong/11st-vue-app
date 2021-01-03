@@ -1,37 +1,37 @@
 <template>
   <div>
     <nav
-        v-if="done"
-        :class="{ show: isShowNav }">
+      v-if="done"
+      :class="{ show: isShowNav }">
       <!--User Info-->
       <div class="user">
         <a href="javascript:void(0)">로그인</a>
         <div class="flex-space"></div>
         <div
-            class="close-nav"
-            @click="offNav"></div>
+          class="close-nav"
+          @click="offNav"></div>
       </div>
       <!--Navigation Container-->
       <div
-          ref="container"
-          class="container"
-          @mouseleave="categoryHover = -1">
+        ref="container"
+        class="container"
+        @mouseleave="categoryHover = -1">
         <div class="group categories">
           <h3 class="group__title">
             {{ navDrawers.categories.title }}
           </h3>
           <ul class="group__list">
             <li
-                v-for="(item1, index) in navDrawers.categories.list"
-                :key="item1.name"
-                :class="{ hover: categoryHover === index }"
-                @mouseenter="categoryHover = index">
+              v-for="(item1, index) in navDrawers.categories.list"
+              :key="item1.name"
+              :class="{ hover: categoryHover === index }"
+              @mouseenter="categoryHover = index">
               <div class="category-icon"></div>
               {{ item1.name }}
               <ul class="depth">
                 <li
-                    v-for="item2 in item1.list"
-                    :key="item2.name">
+                  v-for="item2 in item1.list"
+                  :key="item2.name">
                   <a :href="item2.href">
                     {{ item2.name }}
                   </a>
@@ -42,15 +42,15 @@
         </div>
 
         <div
-            class="group major-services"
-            @mouseenter="categoryHover = -1">
+          class="group major-services"
+          @mouseenter="categoryHover = -1">
           <div class="group__title">
             {{ navDrawers.majorServices.title }}
           </div>
           <ul class="group__list">
             <li
-                v-for="item in navDrawers.majorServices.list"
-                :key="item.name">
+              v-for="item in navDrawers.majorServices.list"
+              :key="item.name">
               <a :href="item.href">
                 {{ item.name }}
               </a>
@@ -59,102 +59,104 @@
         </div>
 
         <div
-            ref="outlets"
-            class="group outlets"
-            @mouseenter="categoryHover = -1">
+          ref="outlets"
+          class="group outlets"
+          @mouseenter="categoryHover = -1">
           <div
-              class="group__title"
-              @click="toggleGroup('outlets')">
+            class="group__title"
+            @click="toggleGroup('outlets')">
             {{ navDrawers.outlets.title }}
             <div class="toggle-list"></div>
           </div>
           <ul
-              v-show="isShowOutlets"
-              v-cloak
-              class="group__list">
+            v-show="isShowOutlets"
+            v-cloak
+            class="group__list">
             <li
-                v-for="item in navDrawers.outlets.list"
-                :key="item.name">
+              v-for="item in navDrawers.outlets.list"
+              :key="item.name">
               <a :href="item.href">
                 <img
-                    :src="item.src"
-                    :alt="item.name"
-                    width="250" />
+                  :src="item.src"
+                  :alt="item.name"
+                  width="250" />
               </a>
             </li>
           </ul>
         </div>
 
         <div
-            ref="partners"
-            class="group partners"
-            @mouseenter="categoryHover = -1">
+          ref="partners"
+          class="group partners"
+          @mouseenter="categoryHover = -1">
           <div
-              class="group__title"
-              @click="toggleGroup('partners')">
+            class="group__title"
+            @click="toggleGroup('partners')">
             {{ navDrawers.partners.title }}
             <div class="toggle-list"></div>
           </div>
           <ul
-              v-show="isShowPartners"
-              v-cloak
-              class="group__list">
+            v-show="isShowPartners"
+            v-cloak
+            class="group__list">
             <li
-                v-for="item in navDrawers.partners.list"
-                :key="item.name">
+              v-for="item in navDrawers.partners.list"
+              :key="item.name">
               <a :href="item.href">
                 <img
-                    :src="item.src"
-                    :alt="item.name"
-                    width="112" />
+                  :src="item.src"
+                  :alt="item.name"
+                  width="112" />
               </a>
             </li>
           </ul>
         </div>
 
         <div
-            ref="brandMall"
-            class="group brand-mall"
-            @mouseenter="categoryHover = -1">
+          ref="brandMall"
+          class="group brand-mall"
+          @mouseenter="categoryHover = -1">
           <div
-              class="group__title"
-              @click="toggleGroup('brandMall')">
+            class="group__title"
+            @click="toggleGroup('brandMall')">
             {{ navDrawers.brandMall.title }}
             <div class="toggle-list"></div>
           </div>
           <ul
-              v-show="isShowBrandMall"
-              v-cloak
-              class="group__list">
+            v-show="isShowBrandMall"
+            v-cloak
+            class="group__list">
             <li
-                v-for="item in navDrawers.brandMall.list"
-                :key="item.name">
+              v-for="item in navDrawers.brandMall.list"
+              :key="item.name">
               <a :href="item.href">
                 <img
-                    :src="item.src"
-                    :alt="item.name"
-                    width="55" />
+                  :src="item.src"
+                  :alt="item.name"
+                  width="55" />
                 <span class="brand-name">{{ item.name }}</span>
               </a>
             </li>
           </ul>
         </div>
-
       </div>
+
       <!--Exhibitions Banner-->
       <div class="exhibitions">
         <a :href="navDrawers.exhibitions.href">
           <img
-              :src="navDrawers.exhibitions.src"
-              :alt="navDrawers.exhibitions.name" />
+            :src="navDrawers.exhibitions.src"
+            :alt="navDrawers.exhibitions.name" />
         </a>
       </div>
     </nav>
+
+    <!--Background-->
     <div
-        v-show="isShowNav"
-        v-cloak
-        class="nav-bg"
-        @click="offNav"></div>
+      v-show="isShowNav"
+      v-cloak
+      class="nav-bg"
+      @click="offNav"></div>
   </div>
 </template>
 

@@ -37,7 +37,9 @@
           class="ranking-wrap">
           <div class="title">
             <h3>실시간 쇼핑 검색어</h3>
-            <div class="time">{{ referenceDate }} 기준</div>
+            <div class="time">
+              {{ referenceDate }} 기준
+            </div>
             <div
               class="close-wrap"
               @click="toggleRankingWrap"></div>
@@ -66,13 +68,35 @@
                 <span class="relative-name">{{ rank.relativeName }}</span>
               </a>
               <div
-                  :class="rank.status"
-                  class="icon"></div>
+                :class="rank.status"
+                class="icon"></div>
             </li>
           </ul>
         </div>
       </div>
-      <div class="user-menu"></div>
+      <ul class="user-menu">
+        <li class="my">
+          <a href="javascript:void(0)"></a>
+          <ul class="my__menu">
+            <li
+              v-for="item in myMenu"
+              :key="item.name">
+              <a :href="item.href">
+                {{ item.name }}
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void(0)"></a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"></a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"></a>
+        </li>
+      </ul>
     </div>
   </header>
 </template>
@@ -87,7 +111,15 @@ export default {
   data () {
     return {
       isShowRankingWrap: false,
-      tabIndex: 0
+      tabIndex: 0,
+      isShowMyMenu: false,
+      myMenu: [
+        { name: '나의 쿠폰', href: 'javascript:void(0)' },
+        { name: '주문/배송조회', href: 'javascript:void(0)' },
+        { name: '취소/반품/교환', href: 'javascript:void(0)' },
+        { name: '고객센터', href: 'javascript:void(0)' },
+        { name: '회원정보', href: 'javascript:void(0)' }
+      ]
     }
   },
   computed: {
@@ -168,26 +200,18 @@ export default {
         }
       }
       .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 190px;
-        height: 120px;
+        width: 94px;
+        height: 40px;
+        margin: 0 24px;
+        background-image: url("https://trusting-williams-8cacfb.netlify.app/images/globals_2x.png");
+        background-position: -162px 0;
+        background-size: 363px;
         cursor: pointer;
-        &::after {
-          content: "";
-          display: block;
-          width: 94px;
-          height: 40px;
-          background-image: url("https://trusting-williams-8cacfb.netlify.app/images/globals_2x.png");
-          background-position: -162px 0;
-          background-size: 363px;
-        }
       }
       .search {
         position: relative;
         input {
-          width: 456px;
+          width: 500px;
           height: 50px;
           padding: 0 27px;
           border: 1px solid #ddd;
@@ -381,6 +405,62 @@ export default {
                 }
                 &.down {
                   background-position: -58px -251px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .user-menu {
+        display: flex;
+        > li {
+          margin-right: 25px;
+          padding: 7px 0;
+          position: relative;
+          &:last-child {
+            margin-right: 0;
+          }
+          > a {
+            display: block;
+            width: 48px;
+            height: 48px;
+            background-image: url("https://trusting-williams-8cacfb.netlify.app/images/globals_2x.png");
+            background-size: 363px;
+          }
+          &:nth-child(1) > a { background-position: -106px -145px; }
+          &:nth-child(2) > a { background-position: 0px -198px; }
+          &:nth-child(3) > a { background-position: -53px -198px; }
+          &:nth-child(4) > a { background-position: -94px -70px; }
+          &:nth-child(1) > a:hover { background-position: -53px -145px; }
+          &:nth-child(2) > a:hover { background-position: -159px -145px; }
+          &:nth-child(3) > a:hover { background-position: 0px -145px; }
+          &:nth-child(4) > a:hover { background-position: -106px -198px; }
+          &.my {
+            &:hover {
+              .my__menu {
+                display: block;
+              }
+            }
+            .my__menu {
+              display: none;
+              width: 170px;
+              padding: 15px 0;
+              position: absolute;
+              top: 60px;
+              left: 0;
+              border: 1px solid #eee;
+              border-radius: 6px;
+              box-sizing: border-box;
+              box-shadow: 0 6px 24px -8px rgba(0,0,0,.12);
+              li {
+                a {
+                  display: block;
+                  padding: 7px 10px 7px 25px;
+                  font-size: 15px;
+                  &:hover {
+                    color: #f43142;
+                    background: #fafafa;
+                  }
                 }
               }
             }

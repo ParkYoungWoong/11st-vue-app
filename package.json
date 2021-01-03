@@ -8,13 +8,20 @@
     "dev": "netlify dev",
     "build": "parcel build index.html"
   },
-  "keywords": [],
+  "keywords": [
+    "Parcel",
+    "Vue",
+    "11st"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.10",
+    "@babel/eslint-parser": "^7.12.1",
     "@vue/component-compiler-utils": "^3.2.0",
     "dotenv": "^8.2.0",
+    "eslint": "^7.17.0",
+    "eslint-plugin-vue": "^7.4.0",
     "netlify-cli": "^2.69.11",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.5.0",
