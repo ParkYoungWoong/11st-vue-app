@@ -21,20 +21,23 @@
 
       <div class="controls">
         <div class="controller">
-          <div class="autoplay"></div>
+          <div
+            :class="{ pause: isAutoplay }"
+            class="autoplay"
+            @click="toggleAutoplay"></div>
         </div>
         <div class="controller">
           <div class="pagination">
             <strong>{{ currentIndex + 1 }}</strong>
-            / {{ billboards.length }}
+            <span>/ {{ billboards.length }}</span>
           </div>
           <a
             class="open-more"
             href="javascript:void(0)"></a>
         </div>
         <div class="controller">
-          <div class="prev"></div>
-          <div class="next"></div>
+          <div class="navi prev"></div>
+          <div class="navi next"></div>
         </div>
       </div>
     </div>
@@ -50,6 +53,8 @@ export default {
   data () {
     return {
       billboards: [],
+      swiper: null,
+      isAutoplay: false,
       currentIndex: 0,
       currentColor: '',
       done: false
@@ -69,12 +74,12 @@ export default {
 
       this.$nextTick(() => {
         // https://swiperjs.com/api/
-        new Swiper(this.$refs.swiper, {
+        this.swiper = new Swiper(this.$refs.swiper, {
           effect: 'fade',
           speed: 1000,
-          // autoplay: {
-          //   delay: 3000
-          // },
+          autoplay: {
+            delay: 3000
+          },
           loop: true,
           preloadImages: false,
           lazy: {
@@ -82,34 +87,60 @@ export default {
             loadPrevNextAmount: 2
           },
           navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
+            nextEl: '.billboard .next',
+            prevEl: '.billboard .prev'
           },
           on: {
             slideChange: swiper => {
               const { realIndex } = swiper
               this.currentIndex = realIndex
               this.currentColor = this.billboards[realIndex].color
+            },
+            autoplayStart: swiper => {
+              this.isAutoplay = true
+            },
+            autoplayStop: swiper => {
+              this.isAutoplay = false
             }
           }
         })
       })
+    },
+    toggleAutoplay () {
+      if (this.isAutoplay) {
+        this.swiper.autoplay.stop()
+      } else {
+        this.swiper.autoplay.start()
+      }
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
+  .billboard {
+    transition: background 1s;
+  }
+  .inner {
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+  }
   .swiper-container {
     width: 1240px;
     height: 400px;
   }
   .controls {
     display: flex;
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    z-index: 1;
     .controller {
       background-color: rgba(#000, .2);
       border-radius: 22.5px;
-      margin-right: 12px;
+      margin-right: 10px;
+      display: flex;
       &:last-child {
         margin-right: 0;
       }
@@ -120,25 +151,80 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        &.pause {
+          &::after {
+            background-position: -170px -29px;
+          }
+        }
         &::after {
           content: "";
           display: block;
-          background-image: url("https://trusting-williams-8cacfb.netlify.app/images/main_2x.jpg");
-          background-position: -170px -29px;
+          width: 24px;
+          height: 24px;
+          background-image: url("https://trusting-williams-8cacfb.netlify.app/images/main_2x.png");
+          background-position: -170px -87px;
           background-size: 209px;
         }
       }
       .pagination {
-
+        display: flex;
+        align-items: center;
+        height: 45px;
+        padding: 0 4px 0 22px;
+        color: #ddd;
+        font-size: 17px;
+        strong {
+          color: #fff;
+          margin-right: 4px;
+          font-weight: 700;
+        }
       }
       .open-more {
-
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::after {
+          content: "";
+          display: block;
+          width: 24px;
+          height: 24px;
+          background-image: url("https://trusting-williams-8cacfb.netlify.app/images/main_2x.png");
+          background-position: -170px 0px;
+          background-size: 209px;
+        }
+      }
+      .navi {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        position: relative;
+        outline: none;
+        cursor: pointer;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 24px;
+          height: 24px;
+          background-image: url("https://trusting-williams-8cacfb.netlify.app/images/main_2x.png");
+          background-size: 209px;
+        }
       }
       .prev {
-
+        &::after {
+          right: 6px;
+          background-position: -170px -58px;
+        }
       }
       .next {
-
+        &::after {
+          left: 6px;
+          background-position: -170px -116px;
+        }
       }
     }
   }

@@ -167,17 +167,15 @@ import { mapActions } from 'vuex'
 export default {
   data () {
     return {
-      done: false,
+      navigations: {},
       categoryHover: -1,
       isShowOutlets: false,
       isShowPartners: false,
-      isShowBrandMall: false
+      isShowBrandMall: false,
+      done: false
     }
   },
   computed: {
-    navigations () {
-      return this.$store.state.fetchData.navigations
-    },
     isShowLNB () {
       return this.$store.state.navigation.isShowLNB
     }
@@ -189,11 +187,8 @@ export default {
     ...mapActions('navigation', [
       'offNav'
     ]),
-    ...mapActions('fetchData', [
-      'fetchData'
-    ]),
     async init () {
-      await this.fetchData({
+      this.navigations = await this.$fetch({
         requestName: 'navigations'
       })
       this.done = true
