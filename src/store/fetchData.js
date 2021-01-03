@@ -4,7 +4,8 @@ export default {
   namespaced: true,
   state: () => ({
     navigations: {},
-    rankings: {}
+    rankings: {},
+    billboards: {}
   }),
   mutations: {
     updateState (state, payload) {

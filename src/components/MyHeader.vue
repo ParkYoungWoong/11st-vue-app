@@ -168,7 +168,7 @@ export default {
     }
   },
   mounted () {
-    this.initSwiper()
+    this.init()
   },
   methods: {
     ...mapActions('navigation', [
@@ -178,7 +178,7 @@ export default {
        'fetchData'
     ]),
     // browserslist for async/await
-    async initSwiper () {
+    async init () {
       await this.fetchData({
         requestName: 'rankings'
       })

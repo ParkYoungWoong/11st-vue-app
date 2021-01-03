@@ -1,12 +1,14 @@
 require('dotenv').config();
 const navigations = require('./navigation.json');
 const rankings = require('./ranking.json');
+const billboards = require('./billboards.json');
 
 exports.handler = async function (event) {
   const { apiKey, requestName } = event.queryStringParameters;
   const jsonFiles = {
     navigations,
-    rankings
+    rankings,
+    billboards
   };
 
   console.log(process.env.API_KEY, apiKey)
