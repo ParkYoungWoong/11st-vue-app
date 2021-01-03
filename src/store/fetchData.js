@@ -3,7 +3,7 @@ import axios from 'axios'
 export default {
   namespaced: true,
   state: () => ({
-    navDrawers: {},
+    navigations: {},
     rankings: {}
   }),
   mutations: {

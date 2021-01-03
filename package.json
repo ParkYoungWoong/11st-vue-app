@@ -19,12 +19,14 @@
     "@babel/core": "^7.12.10",
     "@babel/eslint-parser": "^7.12.1",
     "@vue/component-compiler-utils": "^3.2.0",
+    "autoprefixer": "^9.8.6",
     "dotenv": "^8.2.0",
     "eslint": "^7.17.0",
     "eslint-plugin-vue": "^7.4.0",
     "netlify-cli": "^2.69.11",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.5.0",
+    "postcss": "^8.2.2",
     "sass": "^1.32.0",
     "vue-template-compiler": "^2.6.12"
   },
@@ -33,13 +35,15 @@
     "components": "^0.1.0",
     "dayjs": "^1.9.8",
     "lodash": "^4.17.20",
+    "regenerator-runtime": "^0.13.7",
     "swiper": "^6.4.5",
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4",
     "vuex": "^3.6.0"
   },
   "browserslist": [
-    "last 1 Chrome version"
+    "> 1%",
+    "last 2 versions"
   ],
   "staticFiles": {
     "staticPath": "public"

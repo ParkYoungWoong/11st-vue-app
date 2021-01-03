@@ -2,14 +2,14 @@
   <div>
     <nav
       v-if="done"
-      :class="{ show: isShowNav }">
+      :class="{ show: isShowLNB }">
       <!--User Info-->
       <div class="user">
         <a href="javascript:void(0)">로그인</a>
         <div class="flex-space"></div>
         <div
           class="close-nav"
-          @click="offNav"></div>
+          @click="offNav('LNB')"></div>
       </div>
       <!--Navigation Container-->
       <div
@@ -18,11 +18,11 @@
         @mouseleave="categoryHover = -1">
         <div class="group categories">
           <h3 class="group__title">
-            {{ navDrawers.categories.title }}
+            {{ navigations.categories.title }}
           </h3>
           <ul class="group__list">
             <li
-              v-for="(item1, index) in navDrawers.categories.list"
+              v-for="(item1, index) in navigations.categories.list"
               :key="item1.name"
               :class="{ hover: categoryHover === index }"
               @mouseenter="categoryHover = index">
@@ -45,11 +45,11 @@
           class="group major-services"
           @mouseenter="categoryHover = -1">
           <div class="group__title">
-            {{ navDrawers.majorServices.title }}
+            {{ navigations.majorServices.title }}
           </div>
           <ul class="group__list">
             <li
-              v-for="item in navDrawers.majorServices.list"
+              v-for="item in navigations.majorServices.list"
               :key="item.name">
               <a :href="item.href">
                 {{ item.name }}
@@ -65,7 +65,7 @@
           <div
             class="group__title"
             @click="toggleGroup('outlets')">
-            {{ navDrawers.outlets.title }}
+            {{ navigations.outlets.title }}
             <div class="toggle-list"></div>
           </div>
           <ul
@@ -73,7 +73,7 @@
             v-cloak
             class="group__list">
             <li
-              v-for="item in navDrawers.outlets.list"
+              v-for="item in navigations.outlets.list"
               :key="item.name">
               <a :href="item.href">
                 <img
@@ -92,7 +92,7 @@
           <div
             class="group__title"
             @click="toggleGroup('partners')">
-            {{ navDrawers.partners.title }}
+            {{ navigations.partners.title }}
             <div class="toggle-list"></div>
           </div>
           <ul
@@ -100,7 +100,7 @@
             v-cloak
             class="group__list">
             <li
-              v-for="item in navDrawers.partners.list"
+              v-for="item in navigations.partners.list"
               :key="item.name">
               <a :href="item.href">
                 <img
@@ -119,7 +119,7 @@
           <div
             class="group__title"
             @click="toggleGroup('brandMall')">
-            {{ navDrawers.brandMall.title }}
+            {{ navigations.brandMall.title }}
             <div class="toggle-list"></div>
           </div>
           <ul
@@ -127,7 +127,7 @@
             v-cloak
             class="group__list">
             <li
-              v-for="item in navDrawers.brandMall.list"
+              v-for="item in navigations.brandMall.list"
               :key="item.name">
               <a :href="item.href">
                 <img
@@ -143,20 +143,20 @@
 
       <!--Exhibitions Banner-->
       <div class="exhibitions">
-        <a :href="navDrawers.exhibitions.href">
+        <a :href="navigations.exhibitions.href">
           <img
-            :src="navDrawers.exhibitions.src"
-            :alt="navDrawers.exhibitions.name" />
+            :src="navigations.exhibitions.src"
+            :alt="navigations.exhibitions.name" />
         </a>
       </div>
     </nav>
 
     <!--Background-->
     <div
-      v-show="isShowNav"
+      v-show="isShowLNB"
       v-cloak
       class="nav-bg"
-      @click="offNav"></div>
+      @click="offNav('LNB')"></div>
   </div>
 </template>
 
@@ -175,18 +175,18 @@ export default {
     }
   },
   computed: {
-    navDrawers () {
-      return this.$store.state.fetchData.navDrawers
+    navigations () {
+      return this.$store.state.fetchData.navigations
     },
-    isShowNav () {
-      return this.$store.state.navDrawer.isShow
+    isShowLNB () {
+      return this.$store.state.navigation.isShowLNB
     }
   },
   created () {
     this.init()
   },
   methods: {
-    ...mapActions('navDrawer', [
+    ...mapActions('navigation', [
       'offNav'
     ]),
     ...mapActions('fetchData', [
@@ -194,12 +194,12 @@ export default {
     ]),
     async init () {
       await this.fetchData({
-        requestName: 'navDrawers'
+        requestName: 'navigations'
       })
       this.done = true
     },
     getData (name) {
-      return this.navDrawers[name]
+      return this.navigations[name]
     },
     toggleGroup (name) {
       const pascalCaseName = _upperFirst(name)

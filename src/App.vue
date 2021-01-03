@@ -1,18 +1,20 @@
 <template>
   <div>
-    <nav-drawer></nav-drawer>
+    <l-n-b></l-n-b>
+    <r-n-b></r-n-b>
     <my-header></my-header>
   </div>
 </template>
 
 <script>
-import { mapActions } from 'vuex'
-import NavDrawer from '~/src/components/NavDrawer'
+import LNB from '~/src/components/LNB'
+import RNB from '~/src/components/RNB'
 import MyHeader from '~/src/components/MyHeader'
 
 export default {
   components: {
-    NavDrawer,
+    LNB,
+    RNB,
     MyHeader
   }
 }

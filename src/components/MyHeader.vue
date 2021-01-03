@@ -1,104 +1,134 @@
 <template>
-  <header>
-    <div class="inner">
-      <div
-        class="open-nav-drawer"
-        @click="onNav"></div>
-      <a
-        href="javascript:void(0)"
-        class="logo"></a>
-      <div class="search">
-        <input
-          type="text"
-          placeholder="찾고 싶은 상품을 검색해 보세요!" />
-        <div class="search__icon"></div>
-      </div>
-      <div class="ranking">
+  <div>
+    <header>
+      <div class="inner">
         <div
-          ref="swiper"
-          class="swiper-container">
-          <div class="swiper-wrapper">
-            <div
-              v-for="(rank, index) in rankings.rankings"
-              :key="rank.name"
-              class="swiper-slide">
-              <a :href="rank.href">
-                <span class="index">{{ index + 1 }}</span>
-                <span class="name">{{ rank.name }}</span>
-              </a>
-            </div>
-          </div>
+          class="open-nav-drawer"
+          @click="onNav('LNB')"></div>
+        <a
+          href="javascript:void(0)"
+          class="logo"></a>
+        <div class="search">
+          <input
+            type="text"
+            placeholder="찾고 싶은 상품을 검색해 보세요!" />
+          <div class="search__icon"></div>
         </div>
-        <div
-          class="open-more"
-          @click="toggleRankingWrap"></div>
-        <div
-          v-if="isShowRankingWrap"
-          class="ranking-wrap">
-          <div class="title">
-            <h3>실시간 쇼핑 검색어</h3>
-            <div class="time">
-              {{ referenceDate }} 기준
-            </div>
-            <div
-              class="close-wrap"
-              @click="toggleRankingWrap"></div>
-          </div>
-          <div class="tabs">
-            <div
-              :class="{ active: !tabIndex }"
-              class="tab"
-              @click="tabIndex = 0">
-              1~10위
-            </div>
-            <div
-              :class="{ active: tabIndex }"
-              class="tab"
-              @click="tabIndex = 1">
-              11~20위
-            </div>
-          </div>
-          <ul class="list">
-            <li
-              v-for="(rank, index) in filteredRankings"
-              :key="rank.name">
-              <a :href="rank.href">
-                <span class="index">{{ index + 1 }}</span>
-                <span class="name">{{ rank.name }}</span>
-                <span class="relative-name">{{ rank.relativeName }}</span>
-              </a>
+        <div class="ranking">
+          <div
+            ref="swiper"
+            class="swiper-container">
+            <div class="swiper-wrapper">
               <div
-                :class="rank.status"
-                class="icon"></div>
-            </li>
-          </ul>
+                v-for="(rank, index) in rankings.rankings"
+                :key="rank.name"
+                class="swiper-slide">
+                <a :href="rank.href">
+                  <span class="index">{{ index + 1 }}</span>
+                  <span class="name">{{ rank.name }}</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="open-more"
+            @click="toggleRankingWrap"></div>
+          <div
+            v-if="isShowRankingWrap"
+            class="ranking-wrap">
+            <div class="title">
+              <h3>실시간 쇼핑 검색어</h3>
+              <div class="time">
+                {{ referenceDate }} 기준
+              </div>
+              <div
+                class="close-wrap"
+                @click="toggleRankingWrap"></div>
+            </div>
+            <div class="tabs">
+              <div
+                :class="{ active: !tabIndex }"
+                class="tab"
+                @click="tabIndex = 0">
+                1~10위
+              </div>
+              <div
+                :class="{ active: tabIndex }"
+                class="tab"
+                @click="tabIndex = 1">
+                11~20위
+              </div>
+            </div>
+            <ul class="list">
+              <li
+                v-for="(rank, index) in filteredRankings"
+                :key="rank.name">
+                <a :href="rank.href">
+                  <span class="index">{{ index + 1 }}</span>
+                  <span class="name">{{ rank.name }}</span>
+                  <span class="relative-name">{{ rank.relativeName }}</span>
+                </a>
+                <div
+                  :class="rank.status"
+                  class="icon"></div>
+              </li>
+            </ul>
+          </div>
         </div>
+        <ul class="user-menu">
+          <li class="my">
+            <a href="javascript:void(0)"></a>
+            <ul class="my__menu">
+              <li
+                v-for="item in myMenu"
+                :key="item.name">
+                <a :href="item.href">
+                  {{ item.name }}
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)"></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"></a>
+          </li>
+          <li>
+            <a
+              href="javascript:void(0)"
+              @click="onNav('RNB')"></a>
+          </li>
+        </ul>
       </div>
-      <ul class="user-menu">
-        <li class="my">
-          <a href="javascript:void(0)"></a>
-          <ul class="my__menu">
-            <li
-              v-for="item in myMenu"
-              :key="item.name">
-              <a :href="item.href">
-                {{ item.name }}
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="javascript:void(0)"></a>
-        </li>
-        <li>
-          <a href="javascript:void(0)"></a>
-        </li>
-        <li>
-          <a href="javascript:void(0)"></a>
-        </li>
-      </ul>
+    </header>
+    <div class="utils">
+      <div class="inner">
+        <ul>
+          <li>
+            <a href="javascript:void(0)">베스트</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">쿠폰/혜택</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">기획전</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">오늘장보기</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">T공식대리점</a>
+          </li>
+          <li>
+            <a
+              class="shocking-deal"
+              href="javascript:void(0)"></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
@@ -141,7 +171,7 @@ export default {
     this.initSwiper()
   },
   methods: {
-    ...mapActions('navDrawer', [
+    ...mapActions('navigation', [
       'onNav'
     ]),
     ...mapActions('fetchData', [
@@ -187,8 +217,8 @@ export default {
         border-radius: 50%;
         cursor: pointer;
         box-shadow:
-          0 2px 6px rgba(0,0,0,.06),
-          0 0 1px rgba(0,0,0,.4);
+          0 2px 6px rgba(#000,.06),
+          0 0 1px rgba(#000,.4);
         &::after {
           content: "";
           display: block;
@@ -221,6 +251,9 @@ export default {
           outline: none;
           font-size: 18px;
           font-family: 'Noto Sans KR', sans-serif;
+          &::placeholder {
+            color: #bbb;
+          }
         }
         .search__icon {
           width: 50px;
@@ -302,7 +335,7 @@ export default {
           border: 1px solid #eee;
           border-radius: 4px;
           box-sizing: border-box;
-          box-shadow: 0 6px 24px rgba(0,0,0,.10);
+          box-shadow: 0 6px 24px rgba(#000,.10);
           .title {
             display: flex;
             align-items: flex-end;
@@ -451,7 +484,7 @@ export default {
               border: 1px solid #eee;
               border-radius: 6px;
               box-sizing: border-box;
-              box-shadow: 0 6px 24px -8px rgba(0,0,0,.12);
+              box-shadow: 0 6px 24px -8px rgba(#000,.12);
               li {
                 a {
                   display: block;
@@ -464,6 +497,49 @@ export default {
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+  .utils {
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    .inner {
+      width: 1240px;
+      margin: 0 auto;
+    }
+    ul {
+      display: flex;
+      li {
+        margin-right: 25px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          height: 66px;
+          font-size: 17px;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #f43142;
+            opacity: 0;
+          }
+          &:hover::after {
+            opacity: 1;
+          }
+          &.shocking-deal {
+            width: 63px;
+            background-image: url("https://trusting-williams-8cacfb.netlify.app/images/globals_2x.png");
+            background-position: -94px 0;
+            background-size: 363px;
           }
         }
       }

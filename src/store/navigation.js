@@ -1,7 +1,8 @@
 export default {
   namespaced: true,
   state: () => ({
-    isShow: false
+    isShowLNB: false,
+    isShowRNB: false
   }),
   mutations: {
     updateState (state, payload) {
@@ -11,14 +12,14 @@ export default {
     }
   },
   actions: {
-    onNav ({ commit }) {
+    onNav ({ commit }, name) {
       commit('updateState', {
-        isShow: true
+        [`isShow${name}`]: true
       })
     },
-    offNav ({ commit }) {
+    offNav ({ commit }, name) {
       commit('updateState', {
-        isShow: false
+        [`isShow${name}`]: false
       })
     }
   }
