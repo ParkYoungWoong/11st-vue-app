@@ -9,12 +9,21 @@
             <div>
               <img
                 :src="item.src"
-                :alt="item.name" />
+                :alt="item.name"
+                width="90" />
               <div class="text">
                 {{ item.name }}
               </div>
             </div>
           </a>
+        </li>
+        <li>
+          <div class="open-more">
+            <div class="icon"></div>
+            <div class="text">
+              더보기
+            </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -45,6 +54,33 @@ export default {
   .direct {
     .inner {
       padding: 50px 0;
+    }
+    ul {
+      display: flex;
+      li {
+        margin-right: 25px;
+        &:last-child {
+          margin-right: 0;
+        }
+        img {
+          display: block;
+          margin-bottom: 15px;
+        }
+        .text {
+          font-size: 15px;
+          text-align: center;
+        }
+        .open-more {
+          .icon {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 15px;
+            background-image: url("https://trusting-williams-8cacfb.netlify.app/images/main_2x.png");
+            background-position: 0 0;
+            background-size: 209px;
+          }
+        }
+      }
     }
   }
 </style>

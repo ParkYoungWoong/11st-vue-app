@@ -3,3 +3,22 @@
   margin: 0 auto;
   position: relative;
 }
+section {
+  .inner {
+    padding: 50px 0;
+    box-sizing: border-box;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+}
+.lazy-load-element {
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(100px);
+}
+.lazy-loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
