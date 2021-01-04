@@ -7,16 +7,30 @@
 
 [DEMO](https://trusting-williams-8cacfb.netlify.app/)
 
+## API
+
 Method | URL | Response
 --|--|--
 GET | https://trusting-williams-8cacfb.netlify.app/.netlify/functions/main | JSON
+GET | https://trusting-williams-8cacfb.netlify.app/.netlify/functions/search | String
 
-Parameter | Type | Required | Description
---|--|--|--
-apiKey | String | Y | 인증 키
-requestName | String | Y | 요청할 데이터 이름
+### Parameters
+
+Parameter | Type | URL | Required | Description
+--|--|--|--|--
+apiKey | String | all | Y | 인증 키
+requestName | String | main | Y | 요청할 데이터 이름
+searchText | String | search | Y | 검색어
+
+### Request names
 
 Name | Description
 --|--
 navDrawers | 네비게이션 메뉴 목록 
-rankings | 실시간 쇼핑 검색어 목록(1~20위)
+rankings | 실시간 쇼핑 검색어 목록 (1~20위)
+billboards | 빌보드 슬라이드(Swiper) 제품 목록 (12개)
+directs | 바로가기 메뉴 목록 (쇼킹딜~사업자전용몰) 
+
+## 구현 필요..
+
+- 전역 고정 배너

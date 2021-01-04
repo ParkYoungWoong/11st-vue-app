@@ -10,9 +10,13 @@
           class="logo"></a>
         <div class="search">
           <input
+            v-model="searchText"
             type="text"
-            placeholder="찾고 싶은 상품을 검색해 보세요!" />
-          <div class="search__icon"></div>
+            placeholder="찾고 싶은 상품을 검색해 보세요!"
+            @keypress.enter="search" />
+          <div
+            class="search__icon"
+            @click="search"></div>
         </div>
         <div class="ranking">
           <div
@@ -140,6 +144,7 @@ import 'swiper/swiper-bundle.css'
 export default {
   data () {
     return {
+      searchText: '',
       rankings: {},
       isShowRankingWrap: false,
       tabIndex: 0,
@@ -188,6 +193,16 @@ export default {
           loop: true
         })
       })
+    },
+    async search () {
+      // 기본적인 유효성 검사
+      if (!this.searchText.trim()) return
+
+      const res = await this.$search({
+        searchText: this.searchText
+      })
+      console.log(res)
+      // location = res // 검색된 결과 페이지로 이동!
     },
     toggleRankingWrap () {
       this.isShowRankingWrap = !this.isShowRankingWrap
@@ -479,10 +494,12 @@ export default {
             position: absolute;
             top: 60px;
             left: 0;
+            z-index: 2;
             border: 1px solid #eee;
             border-radius: 6px;
             box-sizing: border-box;
             box-shadow: 0 6px 24px -8px rgba(#000,.12);
+            background-color: #fff;
             li {
               a {
                 display: block;

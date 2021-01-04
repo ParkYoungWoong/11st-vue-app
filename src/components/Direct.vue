@@ -18,7 +18,9 @@
           </a>
         </li>
         <li>
-          <div class="open-more">
+          <div
+            class="open-more"
+            @click="onNav('LNB')">
             <div class="icon"></div>
             <div class="text">
               더보기
@@ -31,6 +33,8 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
   data () {
     return {
@@ -41,6 +45,9 @@ export default {
     this.init()
   },
   methods: {
+    ...mapActions('navigation', [
+      'onNav'
+    ]),
     async init () {
       this.directs = await this.$fetch({
         requestName: 'directs'
@@ -71,6 +78,7 @@ export default {
           text-align: center;
         }
         .open-more {
+          cursor: pointer;
           .icon {
             width: 90px;
             height: 90px;
