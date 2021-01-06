@@ -274,7 +274,7 @@ export default {
         cursor: pointer;
         background-image: url("https://trusting-williams-8cacfb.netlify.app/images/globals_2x.png");
         background-position: -162px -45px;
-        background-size: 363px 275px;
+        background-size: 363px;
       }
     }
     .ranking {
