@@ -82,7 +82,5 @@ directs | 바로가기 메뉴 목록 (쇼킹딜~사업자전용몰)
 
 ## 구현 필요..
 
-- 전역 고정 배너
-- 파비콘
 - Intersection Observer Polyfill
 - 스타일 전역화(색상 등)

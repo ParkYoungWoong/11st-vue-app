@@ -76,12 +76,15 @@ export default {
       width: 34px;
       height: 18px;
       margin: 0 auto 6px;
-      background-color: tomato;
+      cursor: pointer;
+      background-image: url("https://trusting-williams-8cacfb.netlify.app/images/ad_2x.png");
+      background-repeat: no-repeat;
+      background-size: 63px;
     }
     .wing-outer {
       width: 70px;
       height: 70px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       position: relative;
     }
     a.wing {
@@ -155,15 +158,20 @@ export default {
       }
     }
     .to-top {
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       margin: 0 auto;
-      border-radius: 30px;
+      border-radius: 50%;
       cursor: pointer;
       background-color: #333;
       background-image: url("https://trusting-williams-8cacfb.netlify.app/images/to_top_2x.png");
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 50%;
+      transition: background-color .2s;
+      &:hover {
+        background-color: #FE2431;
+      }
     }
   }
 </style>

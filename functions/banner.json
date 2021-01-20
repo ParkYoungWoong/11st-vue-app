@@ -2,12 +2,12 @@
   "vertical": {
     "href": "javascript:void(0)",
     "name": "스마트센서 휴지통",
-    "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/banner/banner_vertical.png"
+    "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/banner/banner_vertical.jpg"
   },
   "horizontal": {
     "href": "javascript:void(0)",
     "name": "그린팔보석 돌침대",
-    "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/banner/banner_horizontal.png",
+    "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/banner/banner_horizontal.jpg",
     "price": {
       "value": "37,500",
       "unit": "원"
