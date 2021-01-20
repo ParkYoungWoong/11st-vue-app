@@ -16,6 +16,7 @@
     <mds-recommendation></mds-recommendation>
     <partner></partner>
     <my-footer></my-footer>
+    <global-banner></global-banner>
   </div>
 </template>
 
@@ -36,6 +37,7 @@ import Promotion from '~/src/components/Promotion'
 import MdsRecommendation from '~/src/components/MdsRecommendation'
 import Partner from '~/src/components/Partner'
 import MyFooter from '~/src/components/MyFooter'
+import GlobalBanner from '~/src/components/GlobalBanner'
 
 export default {
   components: {
@@ -54,7 +56,8 @@ export default {
     Promotion,
     MdsRecommendation,
     Partner,
-    MyFooter
+    MyFooter,
+    GlobalBanner
   }
 }
 </script>

@@ -18,7 +18,7 @@ GET | https://trusting-williams-8cacfb.netlify.app/.netlify/functions/search | S
 
 Parameter | Type | URL | Required | Description
 --|--|--|--|--
-apiKey | String | all | Y | 인증 키
+apiKey | String | - | Y | 인증 키
 requestName | String | main | Y | 요청할 데이터 이름
 searchText | String | search | Y | 검색어
 
@@ -84,4 +84,5 @@ directs | 바로가기 메뉴 목록 (쇼킹딜~사업자전용몰)
 
 - 전역 고정 배너
 - 파비콘
-
+- Intersection Observer Polyfill
+- 스타일 전역화(색상 등)

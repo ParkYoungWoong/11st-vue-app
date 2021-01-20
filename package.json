@@ -36,6 +36,7 @@
     "dayjs": "^1.9.8",
     "lodash": "^4.17.20",
     "regenerator-runtime": "^0.13.7",
+    "scroll-to": "0.0.2",
     "swiper": "^6.4.5",
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4",

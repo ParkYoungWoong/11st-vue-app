@@ -3,6 +3,7 @@ const navigations = require('./navigation.json');
 const rankings = require('./ranking.json');
 const billboards = require('./billboards.json');
 const directs = require('./directs.json');
+const banner = require('./banner.json');
 
 exports.handler = async function (event) {
   const { apiKey, requestName } = event.queryStringParameters;
@@ -10,7 +11,8 @@ exports.handler = async function (event) {
     navigations,
     rankings,
     billboards,
-    directs
+    directs,
+    banner
   };
 
   console.log(process.env.API_KEY, apiKey)

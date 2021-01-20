@@ -119,7 +119,7 @@ export default {
 
 <style scoped lang="scss">
   .billboard {
-    transition: background 1s;
+    transition: background-color 1s;
   }
   .inner {
     width: 1240px;
