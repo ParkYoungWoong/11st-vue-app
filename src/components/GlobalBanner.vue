@@ -123,9 +123,9 @@ export default {
           width: 160px;
         }
         .wing__inner {
-          float: right;
           display: flex;
           align-items: center;
+          justify-content: flex-end;
         }
         .text {
           margin-right: 4px;

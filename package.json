@@ -42,10 +42,12 @@
     "vue-hot-reload-api": "^2.3.4",
     "vuex": "^3.6.0"
   },
+  "__browserslist": "이 프로젝트가 지원하는 대상 브라우저를 지정!",
   "browserslist": [
     "> 1%",
     "last 2 versions"
   ],
+  "__staticFiles": "Parcel Bundler에서 사용될 정적(Static) 파일/폴더 경로!",
   "staticFiles": {
     "staticPath": "public"
   }
