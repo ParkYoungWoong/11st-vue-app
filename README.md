@@ -83,6 +83,5 @@ banner | 전역 우하단 고정 배너 내용
 
 ## 구현 필요..
 
-- Freeze the header when scrolling.
 - Intersection Observer API Polyfill.
 - Globalize styles.(color variables...)

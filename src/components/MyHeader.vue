@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header>
+    <header :class="{ fixed: isFixed }">
       <div class="inner">
         <div
           class="open-nav-drawer"
@@ -106,7 +106,9 @@
         </ul>
       </div>
     </header>
-    <div class="utils">
+    <div
+      :class="{ fixed: isFixed }"
+      class="utils">
       <div class="inner">
         <ul>
           <li>
@@ -137,6 +139,7 @@
 
 <script>
 import { mapActions } from 'vuex'
+import _throttle from 'lodash/throttle'
 import dayjs from 'dayjs'
 import Swiper from 'swiper/bundle'
 import 'swiper/swiper-bundle.css'
@@ -149,6 +152,7 @@ export default {
       isShowRankingWrap: false,
       tabIndex: 0,
       isShowMyMenu: false,
+      isFixed: false,
       myMenu: [
         { name: '나의 쿠폰', href: 'javascript:void(0)' },
         { name: '주문/배송조회', href: 'javascript:void(0)' },
@@ -182,6 +186,10 @@ export default {
         requestName: 'rankings'
       })
 
+      window.addEventListener('scroll', _throttle(event => {
+        this.isFixed = window.scrollY > 120
+      }, 100))
+
       this.$nextTick(() => {
         // https://swiperjs.com/api/
         new Swiper(this.$refs.swiper, {
@@ -212,7 +220,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  // HEADER
   header {
+    background-color: #fff;
+    &.fixed {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      .inner {
+        height: 80px;
+      }
+    }
     .inner {
       height: 120px;
       display: flex;
@@ -516,8 +536,13 @@ export default {
       }
     }
   }
+
+  // UTILS
   .utils {
     border-top: 1px solid #f1f1f1;
+    &.fixed {
+      padding-top: 120px;
+    }
     .inner {
       width: 1240px;
       margin: 0 auto;
