@@ -30,6 +30,7 @@ navDrawers | 네비게이션 메뉴 목록
 rankings | 실시간 쇼핑 검색어 목록 (1~20위)
 billboards | 빌보드 슬라이드(Swiper) 제품 목록 (12개)
 directs | 바로가기 메뉴 목록 (쇼킹딜~사업자전용몰) 
+banner | 전역 우하단 고정 배너 내용
 
 ## Specs
 
