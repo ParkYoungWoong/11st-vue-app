@@ -182,13 +182,13 @@ export default {
       'onNav'
     ]),
     async init () {
-      this.rankings = await this.$fetch({
-        requestName: 'rankings'
-      })
-
       window.addEventListener('scroll', _throttle(event => {
         this.isFixed = window.scrollY > 120
       }, 100))
+
+      this.rankings = await this.$fetch({
+        requestName: 'rankings'
+      })
 
       this.$nextTick(() => {
         // https://swiperjs.com/api/
@@ -228,7 +228,8 @@ export default {
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 99;
+      z-index: 97;
+      box-shadow: 0 2px 8px rgba(#000, .07);
       .inner {
         height: 80px;
       }
