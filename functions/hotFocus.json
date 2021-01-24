@@ -1,0 +1,157 @@
+[
+  {
+    "name": "아이허브 베스트 셀러 상품 모음전",
+    "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/hot_focus/hot_focus1.jpg",
+    "flag": "해외직구데이",
+    "price": {
+      "value": "11,600",
+      "unit": "원"
+    },
+    "listPrice": {
+      "value": "11,600",
+      "unit": "원"
+    },
+    "options": {
+
+    },
+    "coupons": [
+      {
+        "name": "스토어 묶음 쿠폰",
+        "href": "javascript:void(0)",
+        "amount": {
+          "value": "3,000",
+          "unit": "원"
+        }
+      }
+    ]
+  },
+  {
+    "name": "켄트 초극세모 6입 클래식/콤팩트",
+    "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/hot_focus/hot_focus2.jpg",
+    "flag": "나우픽",
+    "price": {
+      "value": "17,300",
+      "unit": "원"
+    },
+    "listPrice": {
+      "value": "19,300",
+      "unit": "원"
+    },
+    "options": {
+      "count": "34,521개 구매",
+      "freeShipping": true
+    },
+    "coupons": [
+      {
+        "name": "생필품위크 30% 할인쿠폰",
+        "href": "javascript:void(0)",
+        "amount": {
+          "value": "30",
+          "unit": "%"
+        }
+      }
+    ]
+  },
+  {
+    "name": "삼성 갤럭시북 플렉스2 NT930QDA-K71AZ",
+    "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/hot_focus/hot_focus3.jpg",
+    "flag": "나우픽",
+    "price": {
+      "value": "2,229,300",
+      "unit": "원"
+    },
+    "listPrice": {
+      "value": "2,371,270",
+      "unit": "원"
+    },
+    "options": {
+      "count": "47개 구매",
+      "freeShipping": true,
+      "accumulation": "SK Pay 최대 <span style='color: royalblue'>1,000P</span> 적립"
+    },
+    "coupons": [
+      {
+        "name": "11번가 추천상품"
+      }
+    ]
+  },
+  {
+    "name": "SK-II 피테라에센스 230ML+마스크1매+스벅기프티콘",
+    "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/hot_focus/hot_focus4.jpg",
+    "flag": "나우픽",
+    "price": {
+      "value": "202,300",
+      "unit": "원"
+    },
+    "listPrice": {
+      "value": "238,000",
+      "unit": "원"
+    },
+    "options": {
+
+    },
+    "coupons": [
+      {
+        "name": "11번가 추천상품"
+      }
+    ]
+  },
+  {
+    "name": "삼성 UHD TV KU70UT7080FXKR 4K",
+    "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/hot_focus/hot_focus5.jpg",
+    "flag": "나우픽",
+    "price": {
+      "value": "1,139,000",
+      "unit": "원"
+    },
+    "listPrice": {
+      "value": "1,239,130",
+      "unit": "원"
+    },
+    "options": {
+      "count": "513개 구매",
+      "freeShipping": true,
+      "accumulation": "SK Pay 최대 <span style='color: royalblue'>110P</span> 적립"
+    },
+    "coupons": [
+      {
+        "name": "11번가 추천상품"
+      }
+    ]
+  },
+  {
+    "name": "헤라/설화수/프리메라 #신년맞이#선물세트 외 +증정",
+    "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/hot_focus/hot_focus6.jpg",
+    "flag": "나우픽",
+    "price": {
+      "value": "29,750",
+      "unit": "원"
+    },
+    "listPrice": {
+      "value": "35,000",
+      "unit": "원"
+    },
+    "options": {
+      "count": "23,914개 구매",
+      "freeShipping": true
+    },
+    "coupons": [
+      {
+        "name": "워너비 할인 쿠폰",
+        "href": "javascript:void(0)",
+        "amount": {
+          "value": "15",
+          "unit": "%"
+        }
+      },
+      {
+        "name": "스토어 묶음 쿠폰",
+        "href": "javascript:void(0)",
+        "amount": {
+          "value": "10",
+          "unit": "%"
+        }
+      }
+    ]
+  }
+]

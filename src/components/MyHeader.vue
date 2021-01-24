@@ -248,8 +248,8 @@ export default {
       border-radius: 50%;
       cursor: pointer;
       box-shadow:
-          0 2px 6px rgba(#000,.06),
-          0 0 1px rgba(#000,.4);
+        0 2px 6px rgba(#000,.06),
+        0 0 1px rgba(#000,.4);
       &::after {
         content: "";
         display: block;
