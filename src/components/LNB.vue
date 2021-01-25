@@ -231,18 +231,16 @@ export default {
       background-color: #fff;
       display: flex;
       align-items: center;
-      position: relative;
       a {
         font-size: 20px;
         font-weight: 700;
-        color: #000;
         text-decoration: none;
         &:hover {
           text-decoration: underline;
         }
       }
       .flex-space {
-        flex: 1;
+        flex-grow: 1;
       }
       .close-nav {
         width: 36px;
@@ -325,20 +323,20 @@ export default {
                 background-image: url("https://trusting-williams-8cacfb.netlify.app/images/categories_2x.png");
                 background-size: 48px; // Origin 96px
               }
-              @for $i from 0 to 12 {
+              @for $i from 1 through 13 {
                 &:nth-child(#{$i}) {
                   .category-icon {
-                    background-position: 0 -#{$i * 24}px;
+                    background-position: 0 -#{($i - 1) * 24}px;
                   }
                 }
               }
               &.hover {
                 background-color: #ff5534;
                 color: #fff;
-                @for $i from 0 through 12 {
+                @for $i from 1 through 13 {
                   &:nth-child(#{$i}) {
                     .category-icon {
-                      background-position: -24px -#{$i * 24}px;
+                      background-position: -24px -#{($i - 1) * 24}px;
                     }
                   }
                 }
