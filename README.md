@@ -86,5 +86,4 @@ hotFocus | 시선집중 할인 제품 목록 (6개)
 
 ## 구현 필요..
 
-- Intersection Observer API Polyfill.
 - Globalize styles.(color variables...)
