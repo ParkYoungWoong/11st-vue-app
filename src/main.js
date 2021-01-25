@@ -1,4 +1,5 @@
 import 'regenerator-runtime/runtime'
+import 'intersection-observer'
 import Vue from 'vue'
 import App from './App'
 import store from './store'
