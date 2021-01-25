@@ -129,6 +129,12 @@ export default {
   .swiper-container {
     width: 1240px;
     height: 400px;
+    // https://unpkg.com/swiper@6.4.8/swiper-bundle.css
+    // 아래 선택자로 검색!
+    .swiper-lazy-preloader {
+      border-color: #F43242;
+      border-top-color: transparent;
+    }
   }
   .controls {
     display: flex;

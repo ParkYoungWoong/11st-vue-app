@@ -13,7 +13,7 @@
             v-model="searchText"
             type="text"
             placeholder="찾고 싶은 상품을 검색해 보세요!"
-            @keypress.enter="search" />
+            @keyup.enter="search" />
           <div
             class="search__icon"
             @click="search"></div>
@@ -209,7 +209,7 @@ export default {
       const res = await this.$search({
         searchText: this.searchText
       })
-      console.log(res)
+      console.log('검색 결과: ', res)
       // location = res // 검색된 결과 페이지로 이동!
     },
     toggleRankingWrap () {

@@ -14,6 +14,8 @@ Method | URL | Response
 GET | https://trusting-williams-8cacfb.netlify.app/.netlify/functions/main | JSON
 GET | https://trusting-williams-8cacfb.netlify.app/.netlify/functions/search | String
 
+> 예제 진행을 위해 검색 요청은 약 2초 뒤에 응답됩니다! 
+
 ### Parameters
 
 Parameter | Type | URL | Required | Description

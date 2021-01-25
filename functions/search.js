@@ -10,6 +10,12 @@ exports.handler = async function (event) {
     };
   }
 
+  await new Promise(resolve => {
+    setTimeout(() => {
+      resolve()
+    }, 2000)
+  })
+
   return {
     statusCode: 200,
     headers: {

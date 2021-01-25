@@ -4,11 +4,7 @@
     "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/hot_focus/hot_focus1.jpg",
     "flag": "해외직구데이",
     "price": {
-      "value": "11,600",
-      "unit": "원"
-    },
-    "listPrice": {
-      "value": "11,600",
+      "value": 11600,
       "unit": "원"
     },
     "options": {
@@ -19,7 +15,7 @@
         "name": "스토어 묶음 쿠폰",
         "href": "javascript:void(0)",
         "amount": {
-          "value": "3,000",
+          "value": 3000,
           "unit": "원"
         }
       }
@@ -30,23 +26,23 @@
     "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/hot_focus/hot_focus2.jpg",
     "flag": "나우픽",
     "price": {
-      "value": "17,300",
+      "value": 17300,
       "unit": "원"
     },
     "listPrice": {
-      "value": "19,300",
+      "value": 19300,
       "unit": "원"
     },
     "options": {
       "count": "34,521개 구매",
-      "freeShipping": true
+      "shipping": "무료배송"
     },
     "coupons": [
       {
         "name": "생필품위크 30% 할인쿠폰",
         "href": "javascript:void(0)",
         "amount": {
-          "value": "30",
+          "value": 30,
           "unit": "%"
         }
       }
@@ -57,16 +53,16 @@
     "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/hot_focus/hot_focus3.jpg",
     "flag": "나우픽",
     "price": {
-      "value": "2,229,300",
+      "value": 2229300,
       "unit": "원"
     },
     "listPrice": {
-      "value": "2,371,270",
+      "value": 2371270,
       "unit": "원"
     },
     "options": {
       "count": "47개 구매",
-      "freeShipping": true,
+      "shipping": "무료배송",
       "accumulation": "SK Pay 최대 <span style='color: royalblue'>1,000P</span> 적립"
     },
     "coupons": [
@@ -80,11 +76,11 @@
     "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/hot_focus/hot_focus4.jpg",
     "flag": "나우픽",
     "price": {
-      "value": "202,300",
+      "value": 202300,
       "unit": "원"
     },
     "listPrice": {
-      "value": "238,000",
+      "value": 238000,
       "unit": "원"
     },
     "options": {
@@ -101,16 +97,16 @@
     "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/hot_focus/hot_focus5.jpg",
     "flag": "나우픽",
     "price": {
-      "value": "1,139,000",
+      "value": 1139000,
       "unit": "원"
     },
     "listPrice": {
-      "value": "1,239,130",
+      "value": 1239130,
       "unit": "원"
     },
     "options": {
       "count": "513개 구매",
-      "freeShipping": true,
+      "shipping": "무료배송",
       "accumulation": "SK Pay 최대 <span style='color: royalblue'>110P</span> 적립"
     },
     "coupons": [
@@ -124,23 +120,23 @@
     "thumbnail": "https://trusting-williams-8cacfb.netlify.app/images/hot_focus/hot_focus6.jpg",
     "flag": "나우픽",
     "price": {
-      "value": "29,750",
+      "value": 29750,
       "unit": "원"
     },
     "listPrice": {
-      "value": "35,000",
+      "value": 35000,
       "unit": "원"
     },
     "options": {
       "count": "23,914개 구매",
-      "freeShipping": true
+      "shipping": "무료배송"
     },
     "coupons": [
       {
         "name": "워너비 할인 쿠폰",
         "href": "javascript:void(0)",
         "amount": {
-          "value": "15",
+          "value": 15,
           "unit": "%"
         }
       },
@@ -148,7 +144,7 @@
         "name": "스토어 묶음 쿠폰",
         "href": "javascript:void(0)",
         "amount": {
-          "value": "10",
+          "value": 10,
           "unit": "%"
         }
       }
