@@ -45,7 +45,6 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
 import Swiper from 'swiper/bundle'
 import 'swiper/swiper-bundle.css'
 
@@ -64,9 +63,6 @@ export default {
     this.init()
   },
   methods: {
-    ...mapActions('fetchData', [
-      'fetchData'
-    ]),
     async init () {
       this.billboards = await this.$fetch({
         requestName: 'billboards'
@@ -120,11 +116,9 @@ export default {
 <style scoped lang="scss">
   .billboard {
     transition: background-color 1s;
-  }
-  .inner {
-    width: 1240px;
-    margin: 0 auto;
-    position: relative;
+    .inner {
+      position: relative;
+    }
   }
   .swiper-container {
     width: 1240px;

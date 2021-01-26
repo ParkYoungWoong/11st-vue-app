@@ -12,8 +12,6 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
-
 export default {
   computed: {
     isShowRNB () {
@@ -21,9 +19,9 @@ export default {
     }
   },
   methods: {
-    ...mapActions('navigation', [
-      'offNav'
-    ])
+    offNav (name) {
+      this.$store.dispatch('navigation/offNav', name)
+    }
   }
 }
 </script>

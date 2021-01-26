@@ -33,8 +33,6 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
-
 export default {
   data () {
     return {
@@ -45,13 +43,13 @@ export default {
     this.init()
   },
   methods: {
-    ...mapActions('navigation', [
-      'onNav'
-    ]),
     async init () {
       this.directs = await this.$fetch({
         requestName: 'directs'
       })
+    },
+    onNav (name) {
+      this.$store.dispatch('navigation/onNav', name)
     }
   }
 }

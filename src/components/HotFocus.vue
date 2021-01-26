@@ -52,6 +52,8 @@ export default {
         requestName: 'hotFocus'
       })
 
+      console.log(this.products)
+
       this.$nextTick(() => {
         // https://swiperjs.com/api/
         new Swiper(this.$refs.swiper, {

@@ -138,7 +138,6 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
 import _throttle from 'lodash/throttle'
 import dayjs from 'dayjs'
 import Swiper from 'swiper/bundle'
@@ -178,9 +177,6 @@ export default {
     this.init()
   },
   methods: {
-    ...mapActions('navigation', [
-      'onNav'
-    ]),
     async init () {
       window.addEventListener('scroll', _throttle(event => {
         this.isFixed = window.scrollY > 120
@@ -201,6 +197,9 @@ export default {
           loop: true
         })
       })
+    },
+    onNav (name) {
+      this.$store.dispatch('navigation/onNav', name)
     },
     async search () {
       // 기본적인 유효성 검사

@@ -162,7 +162,6 @@
 
 <script>
 import _upperFirst from 'lodash/upperFirst'
-import { mapActions } from 'vuex'
 
 export default {
   data () {
@@ -184,14 +183,14 @@ export default {
     this.init()
   },
   methods: {
-    ...mapActions('navigation', [
-      'offNav'
-    ]),
     async init () {
       this.navigations = await this.$fetch({
         requestName: 'navigations'
       })
       this.done = true
+    },
+    offNav (name) {
+      this.$store.dispatch('navigation/offNav', name)
     },
     getData (name) {
       return this.navigations[name]
