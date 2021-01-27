@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:parcel": "parcel index.html",
+    "dev:parcel": "parcel index.html --port 1111",
     "dev": "netlify dev",
     "build": "parcel build index.html"
   },

@@ -6,7 +6,7 @@
 [dev]
   framework = "#custom"
   command = "npm run dev:parcel"
-  targetPort = 1234
+  targetPort = 1111
   port = 8080
   publish = "dist"
   autoLaunch = false
