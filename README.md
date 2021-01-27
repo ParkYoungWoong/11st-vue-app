@@ -7,6 +7,11 @@
 
 [DEMO](https://trusting-williams-8cacfb.netlify.app/)
 
+```bash
+$ npm run dev
+## localhost:8080으로 접속
+```
+
 ## API
 
 Method | URL | Response
