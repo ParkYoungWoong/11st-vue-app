@@ -13,7 +13,7 @@ Vue.use(lazyLoad)
 
 new Vue({
   el: '#app',
+  store,
+  render: h => h(App)
   // render: createElement => createElement(App)
-  render: h => h(App),
-  store
 })

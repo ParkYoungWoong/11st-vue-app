@@ -39,7 +39,9 @@
             @click="toggleRankingWrap"></div>
           <div
             v-if="isShowRankingWrap"
-            class="ranking-wrap">
+            class="ranking-wrap"
+            @click.stop="">
+            <!-- @click.stop is for stopping the propagation of event -->
             <div class="title">
               <h3>실시간 쇼핑 검색어</h3>
               <div class="time">
@@ -68,7 +70,7 @@
                 v-for="(rank, index) in filteredRankings"
                 :key="rank.name">
                 <a :href="rank.href">
-                  <span class="index">{{ index + 1 }}</span>
+                  <span class="index">{{ (tabIndex * 10) + index + 1 }}</span>
                   <span class="name">{{ rank.name }}</span>
                   <span class="relative-name">{{ rank.relativeName }}</span>
                 </a>
@@ -150,7 +152,6 @@ export default {
       rankings: {},
       isShowRankingWrap: false,
       tabIndex: 0,
-      isShowMyMenu: false,
       isFixed: false,
       myMenu: [
         { name: '나의 쿠폰', href: 'javascript:void(0)' },
@@ -211,8 +212,14 @@ export default {
       console.log('검색 결과: ', res)
       // location = res // 검색된 결과 페이지로 이동!
     },
-    toggleRankingWrap () {
+    toggleRankingWrap (event) {
+      event.stopPropagation()
       this.isShowRankingWrap = !this.isShowRankingWrap
+      if (this.isShowRankingWrap) {
+        window.addEventListener('click', () => {
+          this.isShowRankingWrap = false
+        })
+      }
     }
   }
 }
@@ -285,7 +292,7 @@ export default {
           color: #bbb;
         }
       }
-      .search__icon {
+      &__icon {
         width: 50px;
         height: 50px;
         position: absolute;
@@ -367,7 +374,7 @@ export default {
         border: 1px solid #eee;
         border-radius: 4px;
         box-sizing: border-box;
-        box-shadow: 0 6px 24px rgba(#000,.10);
+        box-shadow: 0 6px 24px rgba(#000,.1);
         background-color: #fff;
         .title {
           display: flex;

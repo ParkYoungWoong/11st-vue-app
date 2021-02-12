@@ -89,6 +89,10 @@ hotFocus | 시선집중 할인 제품 목록 (6개)
 - eslint-plugin-vue: Vue.js용 공식 ESLint 플러그인으로, Vue 템플릿 스타일 가이드를 위해 사용합니다.
 - @babel/eslint-parser: 표준 가이드만 제공하는 ESLint에서 실험적/비표준 구문도 변환하기 위해 사용합니다.
 
+## .env
+
+.cache 파일 제거
+
 ## 구현 필요..
 
 - Globalize styles.(color variables...)

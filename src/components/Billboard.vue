@@ -55,8 +55,7 @@ export default {
       swiper: null,
       isAutoplay: false,
       currentIndex: 0,
-      currentColor: '',
-      done: false
+      currentColor: ''
     }
   },
   mounted () {
@@ -116,9 +115,6 @@ export default {
 <style scoped lang="scss">
   .billboard {
     transition: background-color 1s;
-    .inner {
-      position: relative;
-    }
   }
   .swiper-container {
     width: 1240px;

@@ -2,8 +2,8 @@
   <a class="product-card">
     <div
       :class="{ loading: imageLoading }"
-      class="thumbnail"
-      :style="{ backgroundImage: `url(${product.thumbnail})` }"></div>
+      :style="{ backgroundImage: `url(${product.thumbnail})` }"
+      class="thumbnail"></div>
 
     <div class="contents">
       <!--FLAG-->
@@ -90,7 +90,6 @@
 
 <script>
 import numeral from 'numeral'
-import _kebabCase from 'lodash/kebabCase'
 
 export default {
   props: {
@@ -117,9 +116,6 @@ export default {
     this.loadImage()
   },
   methods: {
-    kebabCase (str) {
-      return _kebabCase(str)
-    },
     addComma (num) {
       return numeral(num).format('0,0')
     },

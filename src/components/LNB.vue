@@ -192,16 +192,14 @@ export default {
     offNav (name) {
       this.$store.dispatch('navigation/offNav', name)
     },
-    getData (name) {
-      return this.navigations[name]
-    },
     toggleGroup (name) {
       const pascalCaseName = _upperFirst(name)
-      this.$data[`isShow${pascalCaseName}`] = !this.$data[`isShow${pascalCaseName}`]
-      if (this.$data[`isShow${pascalCaseName}`]) {
+      const computedName = `isShow${pascalCaseName}`
+      this.$data[computedName] = !this.$data[computedName]
+      if (this.$data[computedName]) {
         // 반응성이 나타난 후 콜백 실행!
         this.$nextTick(() => {
-          this.$refs.container.scrollTop = this.$refs[name].offsetTop
+          this.$refs.container.scrollTop = this.$refs[name].offsetTop - 75
         })
       }
     }
@@ -254,7 +252,7 @@ export default {
       height: calc(100% - 164px); // user height 70px + exhibitions height 94px
       padding: 10px 0;
       box-sizing: border-box;
-      overflow: auto;
+      overflow-y: auto;
       a {
         color: #333;
       }

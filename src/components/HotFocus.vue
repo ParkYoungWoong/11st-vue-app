@@ -15,8 +15,7 @@
               v-for="product in products"
               :key="product.name"
               class="swiper-slide">
-              <product-card
-                :product="product"></product-card>
+              <product-card :product="product"></product-card>
             </div>
           </div>
         </div>
