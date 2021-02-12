@@ -7,19 +7,24 @@
 
 [DEMO](https://trusting-williams-8cacfb.netlify.app/)
 
+## 🏁 Getting started!
+
+- `.env` 파일 생성 후 인증 키(`API_KEY`) 지정.
+- `.cache` 파일이 있는 경우 제거.
+
 ```bash
-$ npm run dev
+$ npm i && npm run dev
 ## localhost:8080으로 접속
 ```
 
-## API
+## 🗺 APIs~
 
 Method | URL | Response
 --|--|--
 GET | https://trusting-williams-8cacfb.netlify.app/.netlify/functions/main | JSON
 GET | https://trusting-williams-8cacfb.netlify.app/.netlify/functions/search | String
 
-> 예제 진행을 위해 검색 요청은 약 2초 뒤에 응답됩니다! 
+> 예제 진행을 위해 검색 요청은 1.5초 뒤에 응답됩니다! 
 
 ### Parameters
 
@@ -40,7 +45,7 @@ directs | 바로가기 메뉴 목록 (쇼킹딜~사업자전용몰)
 banner | 전역 우하단 고정 배너 내용
 hotFocus | 시선집중 할인 제품 목록 (6개)
 
-## Specs
+## 💡 Specs
 
 - 11st API(Custom)
 - Parcel Bundler(HMR)
@@ -52,11 +57,11 @@ hotFocus | 시선집중 할인 제품 목록 (6개)
 - PostCSS
 - Autoprefixer
 - Axios
-- Dayjs
-- Lodash
 - Swiper
+- Lodash
+- Dayjs
 
-## Goals
+## 🎯 Goals
 
 - Parcel 번들러를 통해 Vue.js 프로젝트를 구성할 수 있습니다.
 - 11번가 커스텀 API를 요청하고, 실제 쇼핑 데이터를 응답받아 처리할 수 있습니다.(Axios.js)
@@ -71,28 +76,24 @@ hotFocus | 시선집중 할인 제품 목록 (6개)
 - CSS 공급 업체 접두사를 자동으로 생성할 수 있습니다.(Autoprefixer)
 - SCSS(CSS Preprocessor)로 더 쉽고 빠르게 스타일을 작성하고 관리할 수 있습니다. 
 
-## Packages
+## 📦 Packages
 
 > 명시하지 않은 패키지(모듈)는 Parcel 번들러를 통해 자동으로 설치됩니다.
 
-- parcel-bundler: 프로젝트 빌드를 위한 핵심 패키지입니다. 
+- [parcel-bundler](https://parceljs.org/getting_started.html): 프로젝트 빌드를 위한 핵심 패키지입니다. 
 - vue: Vue.js API를 사용하기 위한 핵심 패키지입니다.
 - vuex: Vue.js 애플리케이션에 대한 상태 관리 패턴입니다.
 - axios: HTTP 클라이언트 라이브러리로, 11st API를 통해 쇼핑 정보를 요청하기 위해 사용합니다.
 - [regenerator-runtime](https://www.npmjs.com/package/regenerator-runtime): 비동기(Async) 함수 문법을 사용하기 위해 필요합니다.
-- swiper: 하드웨어 가속 전환과 놀라운 기본 동작을 갖춘 현대적인 슬라이더입니다.
-- lodash: 다양한 유틸리티 기능을 제공하는 자바스크립트 라이브러리입니다.
-- dayjs: Moment.js와 호환 API를 가진 경량 라이브러리로, 날짜 정보를 처리합니다.
+- [swiper](https://swiperjs.com/get-started): 하드웨어 가속 전환과 놀라운 기본 동작을 갖춘 현대적인 슬라이더입니다.
+- [lodash](https://lodash.com/): 다양한 유틸리티 기능을 제공하는 자바스크립트 라이브러리입니다.
+- [dayjs](https://github.com/iamkun/dayjs): Moment.js와 호환 API를 가진 경량 라이브러리로, 날짜 정보를 처리합니다.
 - postcss: CSS 후처리 패키지로 autoprefixer를 사용하기 위해 설치합니다.
 - autoprefixer: CSS에 자동으로 공급 업체 접두사(Vendor prefix)를 적용합니다.
 - eslint: 문제가 있는 코드나 안티 패턴을 찾기 위해 사용하는 스타일 가이드(Linter)입니다.
 - eslint-plugin-vue: Vue.js용 공식 ESLint 플러그인으로, Vue 템플릿 스타일 가이드를 위해 사용합니다.
 - @babel/eslint-parser: 표준 가이드만 제공하는 ESLint에서 실험적/비표준 구문도 변환하기 위해 사용합니다.
 
-## .env
-
-.cache 파일 제거
-
-## 구현 필요..
+## 🤔 Issues..
 
 - Globalize styles.(color variables...)

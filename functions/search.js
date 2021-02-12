@@ -13,7 +13,7 @@ exports.handler = async function (event) {
   await new Promise(resolve => {
     setTimeout(() => {
       resolve()
-    }, 2000)
+    }, 1500)
   })
 
   return {
