@@ -5,7 +5,7 @@
     <div class="inner">
       <div
         ref="swiper"
-        class="swiper-container">
+        class="swiper">
         <div class="swiper-wrapper">
           <div
             v-for="item in billboards"
@@ -46,7 +46,7 @@
 
 <script>
 import Swiper from 'swiper/bundle'
-import 'swiper/swiper-bundle.css'
+import 'swiper/css/bundle'
 
 export default {
   data () {
@@ -68,7 +68,6 @@ export default {
       })
 
       this.$nextTick(() => {
-        // https://swiperjs.com/api/
         this.swiper = new Swiper(this.$refs.swiper, {
           effect: 'fade',
           speed: 1000,
@@ -82,8 +81,8 @@ export default {
             loadPrevNextAmount: 2
           },
           navigation: {
-            nextEl: '.billboard .next',
-            prevEl: '.billboard .prev'
+            prevEl: '.billboard .prev',
+            nextEl: '.billboard .next'
           },
           on: {
             slideChange: swiper => {
@@ -91,10 +90,10 @@ export default {
               this.currentIndex = realIndex
               this.currentColor = this.billboards[realIndex].color
             },
-            autoplayStart: swiper => {
+            autoplayStart: () => {
               this.isAutoplay = true
             },
-            autoplayStop: swiper => {
+            autoplayStop: () => {
               this.isAutoplay = false
             }
           }
@@ -116,7 +115,7 @@ export default {
   .billboard {
     transition: background-color 1s;
   }
-  .swiper-container {
+  .swiper {
     width: 1240px;
     height: 400px;
     // https://unpkg.com/swiper@6.4.8/swiper-bundle.css

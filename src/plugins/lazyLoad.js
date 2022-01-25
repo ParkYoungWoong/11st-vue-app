@@ -1,6 +1,6 @@
 export default {
-  install (Vue) {
-    Vue.prototype.$lazyLoad = element => {
+  install (app) {
+    app.config.globalProperties.$lazyLoad = element => {
       element.classList.add('lazy-load-element')
       const io = new IntersectionObserver(entries => {
         entries.forEach(entry => {

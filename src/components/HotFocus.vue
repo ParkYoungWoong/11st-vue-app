@@ -8,14 +8,14 @@
       <div class="swiper-outer">
         <div
           ref="swiper"
-          class="swiper-container">
+          class="swiper">
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div
               v-for="product in products"
               :key="product.name"
               class="swiper-slide">
-              <product-card :product="product"></product-card>
+              <product-card :product="product" />
             </div>
           </div>
         </div>
@@ -28,8 +28,8 @@
 
 <script>
 import Swiper from 'swiper/bundle'
-import 'swiper/swiper-bundle.css'
-import ProductCard from '~/src/components/ProductCard'
+import 'swiper/css/bundle'
+import ProductCard from '~/components/ProductCard'
 
 export default {
   components: {
@@ -77,7 +77,7 @@ export default {
     background-color: #f6f7fb;
     .inner {
       height: 528px;
-      .swiper-container {
+      .swiper {
         margin: -30px -16px;
         padding: 30px 16px;
       }

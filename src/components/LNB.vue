@@ -1,163 +1,161 @@
 <template>
-  <div>
-    <nav
-      v-if="done"
-      :class="{ show: isShowLNB }">
-      <!--User Info-->
-      <div class="user">
-        <a href="javascript:void(0)">로그인</a>
-        <div class="flex-space"></div>
-        <div
-          class="close-nav"
-          @click="offNav('LNB')"></div>
-      </div>
-      <!--Navigation Container-->
+  <nav
+    v-if="done"
+    :class="{ show: isShowLNB }">
+    <!--User Info-->
+    <div class="user">
+      <a href="javascript:void(0)">로그인</a>
+      <div class="flex-space"></div>
       <div
-        ref="container"
-        class="container"
-        @mouseleave="categoryHover = -1">
-        <div class="group categories">
-          <h3 class="group__title">
-            {{ navigations.categories.title }}
-          </h3>
-          <ul class="group__list">
-            <li
-              v-for="(item1, index) in navigations.categories.list"
-              :key="item1.name"
-              :class="{ hover: categoryHover === index }"
-              @mouseenter="categoryHover = index">
-              <div class="category-icon"></div>
-              {{ item1.name }}
-              <ul class="depth">
-                <li
-                  v-for="item2 in item1.list"
-                  :key="item2.name">
-                  <a :href="item2.href">
-                    {{ item2.name }}
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <div
-          class="group major-services"
-          @mouseenter="categoryHover = -1">
-          <div class="group__title">
-            {{ navigations.majorServices.title }}
-          </div>
-          <ul class="group__list">
-            <li
-              v-for="item in navigations.majorServices.list"
-              :key="item.name">
-              <a :href="item.href">
-                {{ item.name }}
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div
-          ref="outlets"
-          class="group outlets"
-          @mouseenter="categoryHover = -1">
-          <div
-            class="group__title"
-            @click="toggleGroup('outlets')">
-            {{ navigations.outlets.title }}
-            <div class="toggle-list"></div>
-          </div>
-          <ul
-            v-show="isShowOutlets"
-            v-cloak
-            class="group__list">
-            <li
-              v-for="item in navigations.outlets.list"
-              :key="item.name">
-              <a :href="item.href">
-                <img
-                  :src="item.src"
-                  :alt="item.name"
-                  width="250" />
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div
-          ref="partners"
-          class="group partners"
-          @mouseenter="categoryHover = -1">
-          <div
-            class="group__title"
-            @click="toggleGroup('partners')">
-            {{ navigations.partners.title }}
-            <div class="toggle-list"></div>
-          </div>
-          <ul
-            v-show="isShowPartners"
-            v-cloak
-            class="group__list">
-            <li
-              v-for="item in navigations.partners.list"
-              :key="item.name">
-              <a :href="item.href">
-                <img
-                  :src="item.src"
-                  :alt="item.name"
-                  width="112" />
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div
-          ref="brandMall"
-          class="group brand-mall"
-          @mouseenter="categoryHover = -1">
-          <div
-            class="group__title"
-            @click="toggleGroup('brandMall')">
-            {{ navigations.brandMall.title }}
-            <div class="toggle-list"></div>
-          </div>
-          <ul
-            v-show="isShowBrandMall"
-            v-cloak
-            class="group__list">
-            <li
-              v-for="item in navigations.brandMall.list"
-              :key="item.name">
-              <a :href="item.href">
-                <img
-                  :src="item.src"
-                  :alt="item.name"
-                  width="55" />
-                <span class="brand-name">{{ item.name }}</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!--Exhibitions Banner-->
-      <div class="exhibitions">
-        <a :href="navigations.exhibitions.href">
-          <img
-            :src="navigations.exhibitions.src"
-            :alt="navigations.exhibitions.name" />
-        </a>
-      </div>
-    </nav>
-
-    <!--Background-->
+        class="close-nav"
+        @click="offNav('LNB')"></div>
+    </div>
+    <!--Navigation Container-->
     <div
-      v-show="isShowLNB"
-      v-cloak
-      class="nav-bg"
-      @click="offNav('LNB')"></div>
-  </div>
+      ref="container"
+      class="container"
+      @mouseleave="categoryHover = -1">
+      <div class="group categories">
+        <h3 class="group__title">
+          {{ navigations.categories.title }}
+        </h3>
+        <ul class="group__list">
+          <li
+            v-for="(item1, index) in navigations.categories.list"
+            :key="item1.name"
+            :class="{ hover: categoryHover === index }"
+            @mouseenter="categoryHover = index">
+            <div class="category-icon"></div>
+            {{ item1.name }}
+            <ul class="depth">
+              <li
+                v-for="item2 in item1.list"
+                :key="item2.name">
+                <a :href="item2.href">
+                  {{ item2.name }}
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="group major-services"
+        @mouseenter="categoryHover = -1">
+        <div class="group__title">
+          {{ navigations.majorServices.title }}
+        </div>
+        <ul class="group__list">
+          <li
+            v-for="item in navigations.majorServices.list"
+            :key="item.name">
+            <a :href="item.href">
+              {{ item.name }}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        ref="outlets"
+        class="group outlets"
+        @mouseenter="categoryHover = -1">
+        <div
+          class="group__title"
+          @click="toggleGroup('outlets')">
+          {{ navigations.outlets.title }}
+          <div class="toggle-list"></div>
+        </div>
+        <ul
+          v-show="isShowOutlets"
+          v-cloak
+          class="group__list">
+          <li
+            v-for="item in navigations.outlets.list"
+            :key="item.name">
+            <a :href="item.href">
+              <img
+                :src="item.src"
+                :alt="item.name"
+                width="250" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        ref="partners"
+        class="group partners"
+        @mouseenter="categoryHover = -1">
+        <div
+          class="group__title"
+          @click="toggleGroup('partners')">
+          {{ navigations.partners.title }}
+          <div class="toggle-list"></div>
+        </div>
+        <ul
+          v-show="isShowPartners"
+          v-cloak
+          class="group__list">
+          <li
+            v-for="item in navigations.partners.list"
+            :key="item.name">
+            <a :href="item.href">
+              <img
+                :src="item.src"
+                :alt="item.name"
+                width="112" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        ref="brandMall"
+        class="group brand-mall"
+        @mouseenter="categoryHover = -1">
+        <div
+          class="group__title"
+          @click="toggleGroup('brandMall')">
+          {{ navigations.brandMall.title }}
+          <div class="toggle-list"></div>
+        </div>
+        <ul
+          v-show="isShowBrandMall"
+          v-cloak
+          class="group__list">
+          <li
+            v-for="item in navigations.brandMall.list"
+            :key="item.name">
+            <a :href="item.href">
+              <img
+                :src="item.src"
+                :alt="item.name"
+                width="55" />
+              <span class="brand-name">{{ item.name }}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Exhibitions Banner-->
+    <div class="exhibitions">
+      <a :href="navigations.exhibitions.href">
+        <img
+          :src="navigations.exhibitions.src"
+          :alt="navigations.exhibitions.name" />
+      </a>
+    </div>
+  </nav>
+
+  <!--Background-->
+  <div
+    v-show="isShowLNB"
+    v-cloak
+    class="nav-bg"
+    @click="offNav('LNB')"></div>
 </template>
 
 <script>

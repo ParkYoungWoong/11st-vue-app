@@ -1,13 +1,12 @@
-require('dotenv').config();
-const navigations = require('./navigation.json');
-const rankings = require('./ranking.json');
-const billboards = require('./billboards.json');
-const directs = require('./directs.json');
-const banner = require('./banner.json');
-const hotFocus = require('./hotFocus.json');
+const navigations = require('./navigation.json')
+const rankings = require('./ranking.json')
+const billboards = require('./billboards.json')
+const directs = require('./directs.json')
+const banner = require('./banner.json')
+const hotFocus = require('./hotFocus.json')
 
 exports.handler = async function (event) {
-  const { apiKey, requestName } = event.queryStringParameters;
+  const { apiKey, requestName } = event.queryStringParameters
   const jsonFiles = {
     navigations,
     rankings,
@@ -15,15 +14,13 @@ exports.handler = async function (event) {
     directs,
     banner,
     hotFocus
-  };
+  }
 
-  console.log(process.env.API_KEY, apiKey)
-
-  if (process.env.API_KEY !== apiKey) {
+  if ('1216' !== apiKey) {
     return {
       statusCode: 401,
       body: 'Invalid API key!'
-    };
+    }
   }
 
   return {
@@ -35,5 +32,5 @@ exports.handler = async function (event) {
       'Access-Control-Allow-Methods': 'GET'
     },
     body: JSON.stringify(jsonFiles[requestName])
-  };
+  }
 }

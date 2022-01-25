@@ -1,140 +1,138 @@
 <template>
-  <div>
-    <header :class="{ fixed: isFixed }">
-      <div class="inner">
+  <header :class="{ fixed: isFixed }">
+    <div class="inner">
+      <div
+        class="open-nav-drawer"
+        @click="onNav('LNB')"></div>
+      <a
+        href="javascript:void(0)"
+        class="logo"></a>
+      <div class="search">
+        <input
+          v-model="searchText"
+          type="text"
+          placeholder="찾고 싶은 상품을 검색해 보세요!"
+          @keyup.enter="search" />
         <div
-          class="open-nav-drawer"
-          @click="onNav('LNB')"></div>
-        <a
-          href="javascript:void(0)"
-          class="logo"></a>
-        <div class="search">
-          <input
-            v-model="searchText"
-            type="text"
-            placeholder="찾고 싶은 상품을 검색해 보세요!"
-            @keyup.enter="search" />
-          <div
-            class="search__icon"
-            @click="search"></div>
-        </div>
-        <div class="ranking">
-          <div
-            ref="swiper"
-            class="swiper-container">
-            <div class="swiper-wrapper">
-              <div
-                v-for="(rank, index) in rankings.rankings"
-                :key="rank.name"
-                class="swiper-slide">
-                <a :href="rank.href">
-                  <span class="index">{{ index + 1 }}</span>
-                  <span class="name">{{ rank.name }}</span>
-                </a>
-              </div>
+          class="search__icon"
+          @click="search"></div>
+      </div>
+      <div class="ranking">
+        <div
+          ref="swiper"
+          class="swiper">
+          <div class="swiper-wrapper">
+            <div
+              v-for="(rank, index) in rankings.rankings"
+              :key="rank.name"
+              class="swiper-slide">
+              <a :href="rank.href">
+                <span class="index">{{ index + 1 }}</span>
+                <span class="name">{{ rank.name }}</span>
+              </a>
             </div>
           </div>
-          <div
-            class="open-more"
-            @click="toggleRankingWrap"></div>
-          <div
-            v-if="isShowRankingWrap"
-            class="ranking-wrap"
-            @click.stop="">
-            <!-- @click.stop is for stopping the propagation of event -->
-            <div class="title">
-              <h3>실시간 쇼핑 검색어</h3>
-              <div class="time">
-                {{ referenceDate }} 기준
-              </div>
-              <div
-                class="close-wrap"
-                @click="toggleRankingWrap"></div>
-            </div>
-            <div class="tabs">
-              <div
-                :class="{ active: !tabIndex }"
-                class="tab"
-                @click="tabIndex = 0">
-                1~10위
-              </div>
-              <div
-                :class="{ active: tabIndex }"
-                class="tab"
-                @click="tabIndex = 1">
-                11~20위
-              </div>
-            </div>
-            <ul class="list">
-              <li
-                v-for="(rank, index) in filteredRankings"
-                :key="rank.name">
-                <a :href="rank.href">
-                  <span class="index">{{ (tabIndex * 10) + index + 1 }}</span>
-                  <span class="name">{{ rank.name }}</span>
-                  <span class="relative-name">{{ rank.relativeName }}</span>
-                </a>
-                <div
-                  :class="rank.status"
-                  class="icon"></div>
-              </li>
-            </ul>
-          </div>
         </div>
-        <ul class="user-menu">
-          <li class="my">
-            <a href="javascript:void(0)"></a>
-            <ul class="my__menu">
-              <li
-                v-for="item in myMenu"
-                :key="item.name">
-                <a :href="item.href">
-                  {{ item.name }}
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="javascript:void(0)"></a>
-          </li>
-          <li>
-            <a href="javascript:void(0)"></a>
-          </li>
-          <li>
-            <a
-              href="javascript:void(0)"
-              @click="onNav('RNB')"></a>
-          </li>
-        </ul>
+        <div
+          class="open-more"
+          @click="toggleRankingWrap"></div>
+        <div
+          v-if="isShowRankingWrap"
+          class="ranking-wrap"
+          @click.stop="">
+          <!-- @click.stop is for stopping the propagation of event -->
+          <div class="title">
+            <h3>실시간 쇼핑 검색어</h3>
+            <div class="time">
+              {{ referenceDate }} 기준
+            </div>
+            <div
+              class="close-wrap"
+              @click="toggleRankingWrap"></div>
+          </div>
+          <div class="tabs">
+            <div
+              :class="{ active: !tabIndex }"
+              class="tab"
+              @click="tabIndex = 0">
+              1~10위
+            </div>
+            <div
+              :class="{ active: tabIndex }"
+              class="tab"
+              @click="tabIndex = 1">
+              11~20위
+            </div>
+          </div>
+          <ul class="list">
+            <li
+              v-for="(rank, index) in filteredRankings"
+              :key="rank.name">
+              <a :href="rank.href">
+                <span class="index">{{ (tabIndex * 10) + index + 1 }}</span>
+                <span class="name">{{ rank.name }}</span>
+                <span class="relative-name">{{ rank.relativeName }}</span>
+              </a>
+              <div
+                :class="rank.status"
+                class="icon"></div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
-    <div
-      :class="{ fixed: isFixed }"
-      class="utils">
-      <div class="inner">
-        <ul>
-          <li>
-            <a href="javascript:void(0)">베스트</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">쿠폰/혜택</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">기획전</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">오늘장보기</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">T공식대리점</a>
-          </li>
-          <li>
-            <a
-              class="shocking-deal"
-              href="javascript:void(0)"></a>
-          </li>
-        </ul>
-      </div>
+      <ul class="user-menu">
+        <li class="my">
+          <a href="javascript:void(0)"></a>
+          <ul class="my__menu">
+            <li
+              v-for="item in myMenu"
+              :key="item.name">
+              <a :href="item.href">
+                {{ item.name }}
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void(0)"></a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"></a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0)"
+            @click="onNav('RNB')"></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div
+    :class="{ fixed: isFixed }"
+    class="utils">
+    <div class="inner">
+      <ul>
+        <li>
+          <a href="javascript:void(0)">베스트</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">쿠폰/혜택</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">기획전</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">오늘장보기</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">T공식대리점</a>
+        </li>
+        <li>
+          <a
+            class="shocking-deal"
+            href="javascript:void(0)"></a>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -143,7 +141,7 @@
 import _throttle from 'lodash/throttle'
 import dayjs from 'dayjs'
 import Swiper from 'swiper/bundle'
-import 'swiper/swiper-bundle.css'
+import 'swiper/css/bundle'
 
 export default {
   data () {
@@ -308,7 +306,7 @@ export default {
       width: 210px;
       position: relative;
       margin: 0 30px;
-      .swiper-container {
+      .swiper {
         width: 182px;
         height: 28px;
         margin: 0;

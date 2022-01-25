@@ -1,14 +1,12 @@
 <template>
-  <div>
-    <nav :class="{ show: isShowRNB }"></nav>
+  <nav :class="{ show: isShowRNB }"></nav>
 
-    <!--Background-->
-    <div
-      v-show="isShowRNB"
-      v-cloak
-      class="nav-bg"
-      @click="offNav('RNB')"></div>
-  </div>
+  <!--Background-->
+  <div
+    v-show="isShowRNB"
+    v-cloak
+    class="nav-bg"
+    @click="offNav('RNB')"></div>
 </template>
 
 <script>
