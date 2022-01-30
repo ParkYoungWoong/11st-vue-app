@@ -1,7 +1,7 @@
 <template>
   <LNB />
   <RNB />
-  <MyHeader />
+  <TheHeader />
   <Billboard />
   <Direct />
   <HotFocus />
@@ -14,14 +14,14 @@
   <Promotion />
   <MdsRecommendation />
   <Partner />
-  <MyFooter />
+  <TheFooter />
   <GlobalBanner />
 </template>
 
 <script>
 import LNB from '~/components/LNB'
 import RNB from '~/components/RNB'
-import MyHeader from '~/components/MyHeader'
+import TheHeader from '~/components/TheHeader'
 import Billboard from '~/components/Billboard'
 import Direct from '~/components/Direct'
 import HotFocus from '~/components/HotFocus'
@@ -34,14 +34,14 @@ import TodaysChance from '~/components/TodaysChance'
 import Promotion from '~/components/Promotion'
 import MdsRecommendation from '~/components/MdsRecommendation'
 import Partner from '~/components/Partner'
-import MyFooter from '~/components/MyFooter'
+import TheFooter from '~/components/TheFooter'
 import GlobalBanner from '~/components/GlobalBanner'
 
 export default {
   components: {
     LNB,
     RNB,
-    MyHeader,
+    TheHeader,
     Billboard,
     Direct,
     HotFocus,
@@ -54,7 +54,7 @@ export default {
     Promotion,
     MdsRecommendation,
     Partner,
-    MyFooter,
+    TheFooter,
     GlobalBanner
   }
 }

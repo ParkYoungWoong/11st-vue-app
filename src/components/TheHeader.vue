@@ -12,7 +12,7 @@
           v-model="searchText"
           type="text"
           placeholder="찾고 싶은 상품을 검색해 보세요!"
-          @keyup.enter="search" />
+          @keypress.enter="search" />
         <div
           class="search__icon"
           @click="search"></div>
@@ -179,7 +179,8 @@ export default {
     async init () {
       window.addEventListener('scroll', _throttle(event => {
         this.isFixed = window.scrollY > 120
-      }, 100))
+        console.log(event)
+      }, 1000))
 
       this.rankings = await this.$fetch({
         requestName: 'rankings'
